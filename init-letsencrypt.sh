@@ -48,13 +48,13 @@ function make_dummy_certificate {
     openssl req -x509 -nodes -newkey rsa:$rsa_key_size -days 1 \
       -keyout '$path/privkey.pem' \
       -out '$path/fullchain.pem' \
-      -subj '/CN=localhost'" certbot
+      -subj '/CN=localhost'" dev_certbot
   echo
 }
 
 function start_nginx {
   echo "### Starting nginx ..."
-  docker-compose up --force-recreate -d nginx
+  docker-compose up --force-recreate -d dev_webserver
   echo
 }
 
@@ -65,7 +65,7 @@ function delete_dummy_certificate {
   docker-compose run --rm --entrypoint " \
     rm -Rf /etc/letsencrypt/live/$dummy_certificate_domain && \
     rm -Rf /etc/letsencrypt/archive/$dummy_certificate_domain && \
-    rm -Rf /etc/letsencrypt/renewal/$dummy_certificate_domain.conf" certbot
+    rm -Rf /etc/letsencrypt/renewal/$dummy_certificate_domain.conf" dev_certbot
   echo
 }
 
@@ -103,7 +103,7 @@ function request_new_certificate {
       $domain_args \
       --rsa-key-size $rsa_key_size \
       --agree-tos \
-      --force-renewal" certbot
+      --force-renewal" dev_certbot
   else
     echo "###### (requesting with a DNS challange...)"
     docker-compose run --rm --entrypoint " \
@@ -117,14 +117,14 @@ function request_new_certificate {
       --force-renewal \
       --dns-digitalocean \
       --dns-digitalocean-credentials $creds \
-      --dns-digitalocean-propagation-seconds 30
+      --dns-digitalocean-propagation-seconds 30" dev_certbot
   fi
   echo
 }
 
 function reload_nginx {
   echo "### Reloading nginx ..."
-  docker-compose exec nginx nginx -s reload
+  docker-compose exec dev_webserver nginx -s reload
 }
 
 
@@ -178,7 +178,7 @@ for (( i=0; i<"$n_domains"; i++ )); do
 
   domains="${domains_list[$i]}"
 
-  request_new_certificate "$domains" "$email" "$rsa_key_size" "$staging" "$creds"
+  request_new_certificate "$domains" "$email" "$rsa_key_size" "$staging" "$dns_cred_path"
 done
 
 # Reload nginx with new certificates.
