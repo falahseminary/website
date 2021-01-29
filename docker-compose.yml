@@ -28,8 +28,6 @@ services:
       - dev_certbot
       - dev_database
 
-    restart: "no"
-
     # map each named volume to a specified folder/file in container
     volumes:
       #- ./:/var/www/html # copy from here to there... <-- this makes no sense, why would you want to save the laravel project as a volume???
