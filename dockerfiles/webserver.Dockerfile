@@ -6,10 +6,6 @@ RUN apt-get upgrade -y
 # server
 RUN apt-get install -y nginx
 
-# php handler (since nginx won't handle it unlike apache)
-RUN add-apt-repository universe
-RUN apt-get install php7.4-fpm
-
 # php 7.4
 RUN apt -y install software-properties-common
 RUN add-apt-repository ppa:ondrej/php
@@ -27,6 +23,9 @@ RUN apt-get -y install php7.4-bcmath
 RUN apt-get -y install php7.4-xml
 RUN apt-get -y install php7.4-zip
 RUN apt-get -y install php7.4-gd
+
+# php handler (since nginx won't handle it unlike apache)
+RUN apt-get -y install php7.4-fpm
 
 # make apache understand php <-- nginx doesn't need to understand php since fpm is understanding and handling it
 #RUN apt-get install -y libapache2-mod-php
