@@ -18,4 +18,7 @@ php artisan config:clear
 #nginx -g 'daemon off;'
 
 # reload nginx every 6 hours, otherwise run nginx in the foreground normally
-/bin/sh -c "while :; do sleep 6h & wait $${!}; nginx -s reload; done & nginx -g \"daemon off;\""
+while :
+    do sleep 6h & wait ${!}
+    nginx -s reload
+done & nginx -g "daemon off;"
