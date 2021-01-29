@@ -7,6 +7,7 @@ RUN apt-get upgrade -y
 RUN apt-get install -y nginx
 
 # php handler (since nginx won't handle it unlike apache)
+RUN add-apt-repository universe
 RUN apt-get install php7.4-fpm
 
 # php 7.4
