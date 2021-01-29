@@ -74,7 +74,7 @@ function request_new_certificate {
   local email="$2"
   local rsa_key_size="$3"
   local staging="$4"
-  local creds="$5"
+  local creds=$5
 
   echo "### Requesting Let's Encrypt certificate for ${domains[*]} ..."
   #Join $domains to -d args
@@ -178,7 +178,7 @@ for (( i=0; i<"$n_domains"; i++ )); do
 
   domains="${domains_list[$i]}"
 
-  request_new_certificate "$domains" "$email" "$rsa_key_size" "$staging" "$dns_cred_path"
+  request_new_certificate "$domains" "$email" "$rsa_key_size" "$staging" $dns_cred_path
 done
 
 # Reload nginx with new certificates.
