@@ -7,10 +7,10 @@ RUN apt-get upgrade -y
 RUN apt-get install -y nginx
 
 # php 7.4
-RUN apt -y install software-properties-common
+RUN apt-get -y install software-properties-common
 RUN add-apt-repository ppa:ondrej/php
 RUN apt-get update
-RUN apt -y install php7.4
+RUN apt-get -y install php7.4
 RUN apt-get -y install php7.4-cli
 RUN apt-get -y install php7.4-dev
 RUN apt-get -y install php7.4-mysql
@@ -71,8 +71,8 @@ RUN /var/www/html/laravel-project/server/getcomposer.sh
 
 # navigate to and compile project
 WORKDIR /var/www/html/laravel-project
-RUN composer update
-RUN composer install
+#RUN composer update <-- use in dev environment where things are constantly being changed
+RUN composer install --prefer-dist
 RUN npm install
 
 # TODO: set up Laravel folder permissions correctly
