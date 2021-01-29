@@ -24,8 +24,11 @@ services:
       - "444:443"
   
     depends_on:
-      # does not start this service until database service starts
+      # does not start this service until database + certbot services start
+      - dev_certbot
       - dev_database
+
+    restart: "no"
 
     # map each named volume to a specified folder/file in container
     volumes:
@@ -33,6 +36,9 @@ services:
       - /docker/volumes/php:/usr/local/etc/php/php.ini # map host server dir to container file...
       - /docker/volumes/nginx_logs:/var/log/nginx # map host server dir to container dir...
       - /docker/volumes/cron:/var/spool/cron # map host server dir to container dir...
+      - ./server/vhost.conf:/etc/nginx/conf.d/app.conf # map host server file to container file...
+      - ./server/certbot/conf:/etc/letsencrypt # map host server dir to container dir...
+      - ./server/certbot/www:/var/www/certbot # map host server dir to container dir...
 
   # runs MySQL on this machine
   dev_database:
@@ -58,7 +64,7 @@ services:
       --init-file /data/application/init.sql
     
     # always auto-restart regardless of how the container exited (except some cases)
-    restart: always
+    restart: unless-stopped
 
     volumes:
       - /docker/volumes/mysql:/var/lib/mysql
@@ -80,7 +86,7 @@ services:
     ports:
       - "8000:80"
 
-    restart: always
+    restart: unless-stopped
 
     environment:
       PMA_ARBITRARY: 1
@@ -88,3 +94,18 @@ services:
     
     depends_on:
       - dev_database
+
+  # uses letsencrypt service to auto-renew SSL certificates on expire (check every 12 hrs)
+  dev_certbot:
+
+    build:
+      context: .
+      dockerfile: ./dockerfiles/cerbot.Dockerfile
+
+    restart: unless-stopped
+    
+    volumes:
+      - ./server/certbot/conf:/etc/letsencrypt
+      - ./server/certbot/www:/var/www/certbot
+
+    entrypoint: /bin/sh -c 'trap exit TERM; while :; do certbot renew; sleep 12h & wait $${!}; done;'

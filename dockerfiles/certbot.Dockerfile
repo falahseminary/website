@@ -1,0 +1,1 @@
+FROM certbot/dns-digitalocean:v1.11.0

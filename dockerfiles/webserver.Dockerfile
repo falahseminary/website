@@ -52,12 +52,12 @@ RUN apt-get install -y zip
 RUN apt-get install -y unzip
 
 # set up virtual host in docker container
-COPY ./server/vhost.conf /etc/apache2/sites-available/vhost.conf
+#COPY ./server/vhost.conf /etc/nginx/conf.d/app.conf .........already handled in ../docker-compose.yml under dev_webserver->volumes.........
 #COPY ./server/nginx.conf /etc/nginx/nginx.conf .........probably will always stick to defaults for this one..............
 
 # equivalent of a2dissite and a2ensite
-RUN rm -rfv /etc/nginx/sites-enabled/*.conf
-RUN ln -s /etc/nginx/sites-available/vhost.conf /etc/nginx/sites-enabled/vhost.conf
+#RUN rm -rfv /etc/nginx/sites-enabled/*.conf  .........already handled in ../docker-compose.yml under dev_webserver->volumes.........
+#RUN ln -s /etc/nginx/sites-available/vhost.conf /etc/nginx/sites-enabled/vhost.conf  .........already handled in ../docker-compose.yml under dev_webserver->volumes.........
 
 # copy laravel project
 RUN mkdir /var/www/html/laravel-project
