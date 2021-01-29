@@ -100,7 +100,7 @@ services:
 
     build:
       context: .
-      dockerfile: ./dockerfiles/cerbot.Dockerfile
+      dockerfile: ./dockerfiles/certbot.Dockerfile
 
     restart: unless-stopped
     

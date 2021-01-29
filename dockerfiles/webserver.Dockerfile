@@ -7,13 +7,14 @@ RUN apt-get upgrade -y
 RUN apt-get install -y nginx
 
 # php handler (since nginx won't handle it unlike apache)
-RUN apt-get install php5-fpm
+RUN apt-get install php7.4-fpm
 
 # php 7.4
 RUN apt -y install software-properties-common
 RUN add-apt-repository ppa:ondrej/php
 RUN apt-get update
 RUN apt -y install php7.4
+RUN apt-get -y install php7.4-cli
 RUN apt-get -y install php7.4-dev
 RUN apt-get -y install php7.4-mysql
 RUN apt-get -y install php7.4-curl
@@ -96,7 +97,7 @@ ENTRYPOINT ["/var/www/html/laravel-project/server/init.sh"]
 #RUN a2dissite 000-default.conf <-- similar commands not available with nginx, manual approach above
 #RUN a2ensite vhost.conf <-- similar commands not available with nginx, manual approach above
 #RUN a2enmod rewrite <-- similar commands not available with nginx, solved in ../server/vhost.conf
-RUN service php5-fpm restart
+RUN service php7.4-fpm restart
 RUN service nginx restart
 EXPOSE 80
 EXPOSE 443
