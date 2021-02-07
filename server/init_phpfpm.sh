@@ -31,8 +31,8 @@ if [ "$E_MODE" == "dev" ]; then
     find "$E_NGINX_ROOT" -type f -exec chmod 664 {} \;
     find "$E_NGINX_ROOT" -type d -exec chmod 775 {} \;
     npm rebuild
-    npm run dev
     php artisan key:generate
+    npm run watch
 fi
 
 
