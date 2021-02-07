@@ -48,13 +48,13 @@ function make_dummy_certificate {
     openssl req -x509 -nodes -newkey rsa:$rsa_key_size -days 1 \
       -keyout '$path/privkey.pem' \
       -out '$path/fullchain.pem' \
-      -subj '/CN=localhost'" dev_certbot
+      -subj '/CN=localhost'" certbot_service
   echo
 }
 
 function start_nginx {
   echo "### Starting nginx ..."
-  docker-compose up --force-recreate -d dev_webserver
+  docker-compose up --force-recreate -d nginx_service
   echo
 }
 
@@ -65,12 +65,12 @@ function delete_dummy_certificate {
   docker-compose run --rm --entrypoint " \
     rm -Rf /etc/letsencrypt/live/$dummy_certificate_domain && \
     rm -Rf /etc/letsencrypt/archive/$dummy_certificate_domain && \
-    rm -Rf /etc/letsencrypt/renewal/$dummy_certificate_domain.conf" dev_certbot
+    rm -Rf /etc/letsencrypt/renewal/$dummy_certificate_domain.conf" certbot_service
   echo
 }
 
 function request_new_certificate {
-  local domains=( "$1" )
+  local domains=( "$1" ) # convert to array
   local email="$2"
   local rsa_key_size="$3"
   local staging="$4"
@@ -79,7 +79,7 @@ function request_new_certificate {
   echo "### Requesting Let's Encrypt certificate for ${domains[*]} ..."
   #Join $domains to -d args
   domain_args=""
-  for domain in "${domains[@]}"; do
+  for domain in $domains; do
     domain_args="$domain_args -d $domain"
   done
 
@@ -103,7 +103,7 @@ function request_new_certificate {
       $domain_args \
       --rsa-key-size $rsa_key_size \
       --agree-tos \
-      --force-renewal" dev_certbot
+      --force-renewal" certbot_service
   else
     echo "###### (requesting with a DNS challange...)"
     docker-compose run --rm --entrypoint " \
@@ -117,14 +117,21 @@ function request_new_certificate {
       --force-renewal \
       --dns-digitalocean \
       --dns-digitalocean-credentials $creds \
-      --dns-digitalocean-propagation-seconds 30" dev_certbot
+      --dns-digitalocean-propagation-seconds 30" certbot_service
   fi
   echo
 }
 
 function reload_nginx {
   echo "### Reloading nginx ..."
-  docker-compose exec dev_webserver nginx -s reload
+  if $(docker-compose exec nginx_service nginx -s reload); then
+    echo "### Reloaded."
+  else
+    YELO='\033[1;33m'
+    CYAN='\033[0;36m'
+    NO='\033[0m' # No Color
+    echo -e "### ${YELO}Nothing to Reload${NO}...(you probably just ran this before running '${CYAN}docker-compose build${NO}')"
+  fi
 }
 
 
@@ -133,12 +140,12 @@ function reload_nginx {
 ###################################################################
 
 
-domains_list=(falahseminary.org www.falahseminary.org)
+domains_list=("falahseminary.org www.falahseminary.org")
 rsa_key_size=4096
 data_path="./server/certbot"
 dns_cred_path="/etc/letsencrypt/digitalocean.ini" # comment out if not using a dns provider
 email="ibrysar@gmail.com" # Adding a valid address is strongly recommended
-staging=1 # Set to 1 if you're testing your setup to avoid hitting request limits
+staging=0 # Set to 1 if you're testing your setup to avoid hitting request limits
 
 check_if_docker_compose_installed
 
