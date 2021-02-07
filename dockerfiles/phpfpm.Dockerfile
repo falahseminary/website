@@ -97,8 +97,8 @@ WORKDIR ${NGINX_ROOT}
 # resolve project dependencies
 WORKDIR ${NGINX_ROOT}
 RUN if [ "$E_MODE" == "prod" ]; then composer install --optimize-autoloader --no-dev; fi
-RUN if [ "$E_MODE" == "stage" ]; then composer install; fi
-RUN if [ "$E_MODE" == "dev" ]; then composer update; fi
+RUN if [ "$E_MODE" == "stage" ]; then composer install --optimize-autoloader; fi
+RUN if [ "$E_MODE" == "dev" ]; then composer install; fi
 RUN if [ "$E_MODE" != "demo" ]; then npm install; fi
 
 

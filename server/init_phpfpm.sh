@@ -24,15 +24,7 @@ fi
 
 # dev
 if [ "$E_MODE" == "dev" ]; then
-    composer install
-    npm install
     cp "$E_NGINX_ROOT/server_dev/.env" "./.env"
-    chown -R root:www-data "$E_NGINX_ROOT"
-    find "$E_NGINX_ROOT" -type f -exec chmod 664 {} \;
-    find "$E_NGINX_ROOT" -type d -exec chmod 775 {} \;
-    npm rebuild
-    php artisan key:generate
-    npm run watch
 fi
 
 
@@ -58,5 +50,10 @@ N='\033[0m' # No Color
 echo -e $G"Laravel Setup Complete."$N
 
 
-# run php-fpm as root in foreground
-php-fpm -F -R
+if [ "$E_MODE" == "dev" ]; then
+    # run npm run watch in background and php-fpm as root in foreground
+    npm run watch & php-fpm -F -R
+else
+    # run php-fpm as root in foreground
+    php-fpm -F -R
+fi
