@@ -22,7 +22,7 @@ services:
       args:
         <<: *nginx-root # can be used in Dockerfile or here
     ports: # map host ports to containers port...
-      - "80:80"
+      - "81:80" # MAKE SURE TO FORWARD THIS PORT IF RUNNING THIS DOCKER COMPOSE INSIDE A DOCKER CONTAINER (for vscode, see: /.devcontainer)
       - "443:443"
     # NOTE: mounts happen after Dockerfiles are built,
     #       so this means the mount may wipe out any changes
@@ -79,7 +79,7 @@ services:
       args:
         <<: *nginx-root
     ports:
-      - "8000:80"
+      - "8000:80" # MAKE SURE TO FORWARD THIS PORT IF RUNNING THIS DOCKER COMPOSE INSIDE A DOCKER CONTAINER (for vscode, see: /.devcontainer)
     environment:
       PMA_ARBITRARY: 1
       PMA_HOST: database_service

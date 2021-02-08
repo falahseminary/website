@@ -1,9 +1,15 @@
 /node_modules
 /public/hot
 /public/storage
+/public/mix-manifest.json
+/public/js/app.js
+/public/css/app.css
 /storage/*.key
 /storage/logs
 /vendor
+/.devcontainer
+/.vscode
+/.idea
 .env
 .env.backup
 .phpunit.result.cache
@@ -12,7 +18,6 @@ Homestead.json
 Homestead.yaml
 npm-debug.log
 yarn-error.log
-/.devcontainer
 
 !server/*
 !server_dev/*

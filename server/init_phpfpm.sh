@@ -38,6 +38,8 @@ if [ "$E_MODE" == "dev" ]; then
     find "$E_NGINX_ROOT" -type f -exec chmod 664 {} \;
     find "$E_NGINX_ROOT" -type d -exec chmod 775 {} \;
     # compile
+    npm rebuild
+    npm run dev
     php artisan key:generate
     php artisan migrate:fresh --seed
 fi
@@ -54,6 +56,7 @@ if [ "$E_MODE" == "stage" ]; then
     find "$E_NGINX_ROOT" -type f -exec chmod 664 {} \;
     find "$E_NGINX_ROOT" -type d -exec chmod 775 {} \;
     # compile
+    npm rebuild
     npm run dev
     php artisan key:generate
     php artisan migrate:fresh --seed
@@ -95,20 +98,24 @@ echo -e $G"Laravel Setup Complete."$N
 # demo
 if [ "$E_MODE" == "demo" ]; then
     # run php-fpm as root in foreground
+    echo "Running PHP FPM in foreground..."
     php-fpm -F -R
 fi
 
 
 # dev
 if [ "$E_MODE" == "dev" ]; then
-    # run npm run watch in background and php-fpm as root in foreground
-    npm run watch-poll & php-fpm -F -R
+    # note: manually run "npm run watch" in parent dev container after application is fully running
+    # run php-fpm in foreground
+    echo "Running PHP FPM in foreground..."
+    php-fpm -F -R
 fi
 
 
 # stage
 if [ "$E_MODE" == "stage" ]; then
     # run php-fpm as root in foreground
+    echo "Running PHP FPM in foreground..."
     php-fpm -F -R
 fi
 
@@ -116,5 +123,6 @@ fi
 # prod
 if [ "$E_MODE" == "stage" ]; then
     # run php-fpm as root in foreground
+    echo "Running PHP FPM in foreground..."
     php-fpm -F -R
 fi
