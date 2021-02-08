@@ -34,7 +34,7 @@ if [ "$E_MODE" == "dev" ]; then
     composer install
     npm install
     # permit
-    chown -R root:www-data "$E_NGINX_ROOT"
+    chown -R $USER:www-data "$E_NGINX_ROOT"
     find "$E_NGINX_ROOT" -type f -exec chmod 664 {} \;
     find "$E_NGINX_ROOT" -type d -exec chmod 775 {} \;
     # compile
@@ -102,7 +102,7 @@ fi
 # dev
 if [ "$E_MODE" == "dev" ]; then
     # run npm run watch in background and php-fpm as root in foreground
-    npm run watch & php-fpm -F -R
+    npm run watch-poll & php-fpm -F -R
 fi
 
 
