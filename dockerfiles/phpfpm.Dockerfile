@@ -14,48 +14,8 @@ SHELL ["/bin/bash", "-c"]
 RUN mkdir -p ${NGINX_ROOT}/server
 COPY ./server/getcomposer.sh ${NGINX_ROOT}/server/
 COPY ./server/init_phpfpm.sh ${NGINX_ROOT}/server/init_phpfpm.sh
-
-
-# allow execute on getcomposer script and run it
-#RUN chmod +x ${NGINX_ROOT}/server/getcomposer.sh
-#RUN ${NGINX_ROOT}/server/getcomposer.sh
-
-
-# update and upgrade
-#RUN apt-get -y update
-#RUN apt-get -y upgrade
-
-# get misc stuff
-#RUN apt-get -y install wget
-#RUN apt-get -y install zip
-#RUN apt-get -y install unzip
-#RUN apt-get -y install curl
-
-
-# php 7.4 + extensions
-
-# get gpg key
-#RUN apt-get -y install software-properties-common <-- for Ubuntu
-#RUN apt-get -y install lsb-release apt-transport-https ca-certificates 
-#RUN wget -O /etc/apt/trusted.gpg.d/php.gpg https://packages.sury.org/php/apt.gpg
-
-# add repository
-#RUN add-apt-repository ppa:ondrej/php <-- for Ubuntu
-#RUN echo "deb https://packages.sury.org/php/ $(lsb_release -sc) main" | tee /etc/apt/sources.list.d/php.list
-#RUN apt-get update
-
-# install php stuff
-#RUN apt-get -y install php7.4-dev
-#RUN apt-get -y install php7.4-mysql
-#RUN apt-get -y install php7.4-curl
-#RUN apt-get -y install php7.4-json
-#RUN apt-get -y install php7.4-common
-#RUN apt-get -y install php7.4-mbstring
-#RUN apt-get -y install php7.4-gmp
-#RUN apt-get -y install php7.4-bcmath
-#RUN apt-get -y install php7.4-xml
-#RUN apt-get -y install php7.4-zip
-#RUN apt-get -y install php7.4-gd
+# EDIT: Actually copy everything. Why? Install everything once here so starting the container is quick
+#COPY . ${NGINX_ROOT}/
 
 
 # Install system dependencies
@@ -91,30 +51,30 @@ RUN npm --version
 
 
 # navigate to project
-WORKDIR ${NGINX_ROOT}
+#WORKDIR ${NGINX_ROOT}
 
 
 # resolve project dependencies
-WORKDIR ${NGINX_ROOT}
-RUN if [ "$E_MODE" == "prod" ]; then composer install --optimize-autoloader --no-dev; fi
-RUN if [ "$E_MODE" == "stage" ]; then composer install --optimize-autoloader; fi
-RUN if [ "$E_MODE" == "dev" ]; then composer install; fi
-RUN if [ "$E_MODE" != "demo" ]; then npm install; fi
+#WORKDIR ${NGINX_ROOT}
+#RUN if [ "$E_MODE" == "prod" ]; then composer install --optimize-autoloader --no-dev; fi
+#RUN if [ "$E_MODE" == "stage" ]; then composer install --optimize-autoloader; fi
+#RUN if [ "$E_MODE" == "dev" ]; then composer install; fi
+#RUN if [ "$E_MODE" != "demo" ]; then npm install; fi
 
 
 # set permissions
 # see: https://stackoverflow.com/q/30639174
-RUN if [ "$E_MODE" != "demo" ]; then chown -R root:www-data ${NGINX_ROOT}; fi
-RUN if [ "$E_MODE" != "demo" ]; then find ${NGINX_ROOT} -type f -exec chmod 664 {} \;; fi
-RUN if [ "$E_MODE" != "demo" ]; then find ${NGINX_ROOT} -type d -exec chmod 775 {} \;; fi
-RUN if [ "$E_MODE" != "demo" ]; then chgrp -R www-data storage bootstrap/cache; fi
-RUN if [ "$E_MODE" != "demo" ]; then chmod -R ug+rwx storage bootstrap/cache; fi
+#RUN if [ "$E_MODE" != "demo" ]; then chown -R root:www-data ${NGINX_ROOT}; fi
+#RUN if [ "$E_MODE" != "demo" ]; then find ${NGINX_ROOT} -type f -exec chmod 664 {} \;; fi
+#RUN if [ "$E_MODE" != "demo" ]; then find ${NGINX_ROOT} -type d -exec chmod 775 {} \;; fi
+#RUN if [ "$E_MODE" != "demo" ]; then chgrp -R www-data storage bootstrap/cache; fi
+#RUN if [ "$E_MODE" != "demo" ]; then chmod -R ug+rwx storage bootstrap/cache; fi
 
 
 # compile project
-RUN if [ "$E_MODE" != "demo" ]; then npm rebuild; fi
-RUN if [ "$E_MODE" != "demo" ]; then npm run dev; fi
-RUN if [ "$E_MODE" != "demo" ]; then php artisan key:generate; fi
+#RUN if [ "$E_MODE" != "demo" ]; then npm rebuild; fi
+#RUN if [ "$E_MODE" != "demo" ]; then npm run dev; fi
+#RUN if [ "$E_MODE" != "demo" ]; then php artisan key:generate; fi
 
 
 # allow execute on shell script and run it
