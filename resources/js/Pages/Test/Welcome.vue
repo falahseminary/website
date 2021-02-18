@@ -54,7 +54,7 @@
 
 
 <script>
-import Background from './Background'
+import Background from './Background.vue';
 export default {
     components : {
         //AppLayout // ES6 shorthand for:   'AppLayout' : AppLayout
@@ -83,7 +83,7 @@ export default {
 }
 </script>
 
-
+<!--
 <style scoped>
     .bg-gray-100 {
         background-color: #f7fafc;
@@ -147,3 +147,4 @@ export default {
         }
     }
 </style>
+-->

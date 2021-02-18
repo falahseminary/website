@@ -26,7 +26,7 @@ Route::get('/', function () {
 
 // quickly test a component
 Route::get('/test/temp', function () {
-    return Inertia::render('Test/Background');
+    return Inertia::render('Test/Welcome2');
 })->name('test-temp');
 
 Route::get('/test/', function () {
