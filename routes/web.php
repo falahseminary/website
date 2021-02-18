@@ -24,6 +24,22 @@ Route::get('/', function () {
     ]);
 });
 
+// quickly test a component
+Route::get('/test/temp', function () {
+    return Inertia::render('Test/Background');
+})->name('test-temp');
+
+Route::get('/test/', function () {
+    return Inertia::render('Test/Welcome', [
+        'canLogin' => Route::has('login'),
+        'canRegister' => Route::has('register'),
+        'laravelVersion' => Application::VERSION,
+        'phpVersion' => PHP_VERSION,
+    ]);
+})->name('test-welcome');
+
+// auth required pages...
+
 Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
     return Inertia::render('Dashboard');
 })->name('dashboard');

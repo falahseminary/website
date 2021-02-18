@@ -49,6 +49,8 @@ ENV PATH="/root/.nvm/versions/node/v${NODE_VERSION}/bin/:${PATH}"
 RUN node --version
 RUN npm --version
 
+# set default dir of container
+WORKDIR ${NGINX_ROOT}
 
 # allow execute on shell script and run it
 RUN chmod +x ${NGINX_ROOT}/server/init_phpfpm.sh

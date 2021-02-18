@@ -1,7 +1,7 @@
 #!/bin/bash
 
 
-# navigate
+# navigate (this is redundant, we are already here)
 cd "$E_NGINX_ROOT"
 
 

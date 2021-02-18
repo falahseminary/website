@@ -14,6 +14,8 @@ COPY ./server/init_nginx.sh ${NGINX_ROOT}/server/init_nginx.sh
 RUN find ${NGINX_ROOT} -type f -exec chmod 664 {} \;
 RUN find ${NGINX_ROOT} -type d -exec chmod 775 {} \;
 
+# set default dir of container
+WORKDIR ${NGINX_ROOT}
 
 # allow execute on shell script and run it
 RUN chmod +x ${NGINX_ROOT}/server/init_nginx.sh
