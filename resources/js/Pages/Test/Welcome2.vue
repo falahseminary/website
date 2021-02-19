@@ -1,23 +1,13 @@
 <template>
-    <AppLayoutNoTeams>
-        
-        <template #header>
-            Header
-        </template>
-
-        <template #content>
-            Content
-        </template>
-
-    </AppLayoutNoTeams>
+    
 </template>
 
 
 <script>
-import AppLayoutNoTeams from '../../Layouts/AppLayoutNoTeams.vue';
+//import AppLayoutNoTeams from '../../Layouts/AppLayoutNoTeams.vue';
 export default {
     components : {
-        AppLayoutNoTeams
+        
     },
     data () { // locally defined
         return {
