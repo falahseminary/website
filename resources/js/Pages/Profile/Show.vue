@@ -1,5 +1,5 @@
 <template>
-    <app-layout>
+    <app-layout-no-teams>
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 Profile
@@ -35,11 +35,11 @@
                 </template>
             </div>
         </div>
-    </app-layout>
+    </app-layout-no-teams>
 </template>
 
 <script>
-    import AppLayout from '@/Layouts/AppLayout'
+    import AppLayoutNoTeams from '@/Layouts/AppLayoutNoTeams'
     import DeleteUserForm from './DeleteUserForm'
     import JetSectionBorder from '@/Jetstream/SectionBorder'
     import LogoutOtherBrowserSessionsForm from './LogoutOtherBrowserSessionsForm'
@@ -51,7 +51,7 @@
         props: ['sessions'],
 
         components: {
-            AppLayout,
+            AppLayoutNoTeams,
             DeleteUserForm,
             JetSectionBorder,
             LogoutOtherBrowserSessionsForm,

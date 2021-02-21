@@ -1,5 +1,5 @@
 <template>
-    <app-layout>
+    <app-layout-no-teams>
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 API Tokens
@@ -13,12 +13,12 @@
                                    :default-permissions="defaultPermissions" />
             </div>
         </div>
-    </app-layout>
+    </app-layout-no-teams>
 </template>
 
 <script>
     import ApiTokenManager from './ApiTokenManager'
-    import AppLayout from '@/Layouts/AppLayout'
+    import AppLayoutNoTeams from '@/Layouts/AppLayoutNoTeams'
 
     export default {
         props: [
@@ -29,7 +29,7 @@
 
         components: {
             ApiTokenManager,
-            AppLayout,
+            AppLayoutNoTeams,
         },
     }
 </script>

@@ -24,7 +24,8 @@ Route::get('/', function () {
     ]);
 });
 
-// quickly test a component
+// testing pages (can be commented out)
+
 Route::get('/test/temp', function () {
     return Inertia::render('Test/Welcome2');
 })->name('test-temp');

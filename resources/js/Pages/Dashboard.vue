@@ -1,5 +1,5 @@
 <template>
-    <app-layout>
+    <app-layout-no-teams>
         <template #header>
             <h2 class="font-semibold text-xl text-gray-800 leading-tight">
                 Dashboard
@@ -13,16 +13,16 @@
                 </div>
             </div>
         </div>
-    </app-layout>
+    </app-layout-no-teams>
 </template>
 
 <script>
-    import AppLayout from '@/Layouts/AppLayout'
+    import AppLayoutNoTeams from '@/Layouts/AppLayoutNoTeams'
     import Welcome from '@/Jetstream/Welcome'
 
     export default {
         components: {
-            AppLayout,
+            AppLayoutNoTeams,
             Welcome,
         },
     }
