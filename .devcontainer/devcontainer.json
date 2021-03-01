@@ -20,11 +20,11 @@
 	],
 	
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [81, 8000] // <-- 81 is the dev website port, 8000 is the dev phpmyadmin port
+	"forwardPorts": [81, 8000], // <-- 81 is the dev website port, 8000 is the dev phpmyadmin port
 
 	// Use 'postCreateCommand' to run commands after the container is created.
 	// "postCreateCommand": "docker --version",
 
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
-	//"remoteUser": "vscode"
+	"remoteUser": "root"
 }

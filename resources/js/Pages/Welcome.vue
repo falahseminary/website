@@ -30,7 +30,7 @@
 </template>
 
 <script>
-
+    import { LandingLayout } from "@/Layouts/LandingLayout";
     export default {
         components : {
             LandingLayout,
