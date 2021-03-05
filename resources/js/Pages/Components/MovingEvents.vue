@@ -1,6 +1,8 @@
 <template>
     <div>
-
+        <slot name="events">
+            Malformed Events
+        </slot>
     </div>
 </template>
 

@@ -3,6 +3,10 @@
         <!-- pasted from: https://tailwindcomponents.com/component/profile-card -->
 
 
+        <slot name="cards">
+            Malformed Profile Cards
+        </slot>
+
         <div class="rounded overflow-hidden shadow-lg max-w-xs my-3">
             <img src="https://i.imgur.com/dYcYQ7E.png" class="w-full" />
             <div class="flex justify-center -mt-8">

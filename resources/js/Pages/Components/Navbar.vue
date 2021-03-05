@@ -7,7 +7,9 @@
             <div class="container mx-auto px-6 py-3 md:flex md:justify-between md:items-center">
                 <div class="flex justify-between items-center">
                 <div>
-                    <a class="text-gray-800 text-xl font-bold md:text-2xl hover:text-gray-700" href="#">Brand</a>
+                    <slot name="logo">
+                        <a class="text-gray-800 text-xl font-bold md:text-2xl hover:text-gray-700" href="#">Logo</a>
+                    </slot>
                 </div>
 
                 <!-- Mobile menu button -->
@@ -19,6 +21,10 @@
                     </button>
                 </div>
                 </div>
+
+                <slot name="options">
+                    Malformed Options
+                </slot>
 
                 <!-- Mobile Menu open: "block", Menu closed: "hidden" -->
                 <div class="md:flex items-center">

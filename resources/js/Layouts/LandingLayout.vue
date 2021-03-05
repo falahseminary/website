@@ -6,7 +6,7 @@
             <template #logo>
                 Logo
             </template>
-            <template #Options>
+            <template #options>
                 Options...
             </template>
         </navbar>
@@ -58,21 +58,24 @@
 </template>
 
 <script>
-    import JetApplicationMark from '@/Jetstream/ApplicationMark'
-    import JetBanner from '@/Jetstream/Banner'
-    import JetDropdown from '@/Jetstream/Dropdown'
-    import JetDropdownLink from '@/Jetstream/DropdownLink'
-    import JetNavLink from '@/Jetstream/NavLink'
-    import JetResponsiveNavLink from '@/Jetstream/ResponsiveNavLink'
-
+    import { AboutUs } from "./../Pages/Components/AboutUs";
+    import { FooterContent } from "./../Pages/Components/FooterContent";
+    import { HeaderContent } from "./../Pages/Components/HeaderContent";
+    import { MovingAnnoucements } from "./../Pages/Components/MovingAnnoucements";
+    import { MovingEvents } from "./../Pages/Components/MovingEvents";
+    import { MovingProfiles } from "./../Pages/Components/MovingProfiles";
+    import { Navbar } from "./../Pages/Components/Navbar";
+    import { Stats } from "./../Pages/Components/Stats";
     export default {
         components: {
-            JetApplicationMark,
-            JetBanner,
-            JetDropdown,
-            JetDropdownLink,
-            JetNavLink,
-            JetResponsiveNavLink,
+            AboutUs,
+            FooterContent,
+            HeaderContent,
+            MovingAnnoucements,
+            MovingEvents,
+            MovingProfiles,
+            Navbar,
+            Stats
         },
 
         data() {
