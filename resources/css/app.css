@@ -1,3 +1,11 @@
+/*:root {
+    --color-primary: 217, 249, 165;
+    --color-secondary: 105, 3, 117;
+    --color-trim-a: 244, 254, 193;
+    --color-trim-b: 44, 14, 55;
+    --color-trim-c: 203, 66, 159;
+}*/
+
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';

@@ -4,7 +4,7 @@
         <!-- :::NAV::: -->
         <navbar>
             <template #logo>
-                Logo
+                <img src="media/logo.png">
             </template>
             <template #options>
                 Options...
@@ -20,7 +20,7 @@
 
         <moving-announcements>
             <template #announcements>
-                Annoucements...
+                Announcements...
             </template>
         </moving-announcements>
 
@@ -58,20 +58,20 @@
 </template>
 
 <script>
-    import { AboutUs } from "./../Pages/Components/AboutUs";
-    import { FooterContent } from "./../Pages/Components/FooterContent";
-    import { HeaderContent } from "./../Pages/Components/HeaderContent";
-    import { MovingAnnoucements } from "./../Pages/Components/MovingAnnoucements";
-    import { MovingEvents } from "./../Pages/Components/MovingEvents";
-    import { MovingProfiles } from "./../Pages/Components/MovingProfiles";
-    import { Navbar } from "./../Pages/Components/Navbar";
-    import { Stats } from "./../Pages/Components/Stats";
+    import AboutUs from "../Pages/Components/AboutUs";
+    import FooterContent from "../Pages/Components/FooterContent";
+    import HeaderContent from "../Pages/Components/HeaderContent";
+    import MovingAnnouncements from "../Pages/Components/MovingAnnouncements";
+    import MovingEvents from "../Pages/Components/MovingEvents";
+    import MovingProfiles from "../Pages/Components/MovingProfiles";
+    import Navbar from "../Pages/Components/Navbar";
+    import Stats from "../Pages/Components/Stats";
     export default {
         components: {
             AboutUs,
             FooterContent,
             HeaderContent,
-            MovingAnnoucements,
+            MovingAnnouncements,
             MovingEvents,
             MovingProfiles,
             Navbar,
@@ -79,15 +79,17 @@
         },
 
         data() {
-            return {
-                showingNavigationDropdown: false,
-            }
+            return {}
         },
 
         methods: {
             logout() {
                 this.$inertia.post(route('logout'));
             },
-        }
+        },
+
+        props: [
+            'logo_src'
+        ]
     }
 </script>
