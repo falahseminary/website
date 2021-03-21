@@ -13,6 +13,14 @@
         components : {
             LandingLayout
         },
+
+        data() {
+            return {
+                'pad_x' : 10,
+                'pad_y' : 2
+            }
+        },
+        
         props: {
             canLogin: Boolean,
             canRegister: Boolean,

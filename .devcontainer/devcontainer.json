@@ -16,7 +16,8 @@
 	"extensions": [
 		"ms-azuretools.vscode-docker",
 		"bradlc.vscode-tailwindcss",
-		"octref.vetur"
+		"octref.vetur",
+		"ecmel.vscode-html-css"
 	],
 	
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.

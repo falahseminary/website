@@ -4,10 +4,14 @@
         <!-- :::NAV::: -->
         <navbar>
             <template #logo>
-                <img src="media/logo.png">
+                <img src="media/logo-main.png" width=80 height=80>
             </template>
             <template #options>
-                Options...
+                <navbar-link><template #text>Text 1</template></navbar-link>
+                <navbar-link><template #text>Text 2</template></navbar-link>
+                <navbar-link><template #text>Text 3</template></navbar-link>
+                <navbar-item><template #html><pill-tag><template #text>Text 4</template></pill-tag></template></navbar-item>
+                <navbar-item><template #html><rect-tag><template #text>Text 5</template></rect-tag></template></navbar-item>
             </template>
         </navbar>
 
@@ -65,6 +69,10 @@
     import MovingEvents from "../Pages/Components/MovingEvents";
     import MovingProfiles from "../Pages/Components/MovingProfiles";
     import Navbar from "../Pages/Components/Navbar";
+    import NavbarItem from "../Pages/Components/NavbarItem";
+    import NavbarLink from "../Pages/Components/NavbarLink";
+    import PillTag from "../Pages/Components/PillTag";
+    import RectTag from "../Pages/Components/RectTag";
     import Stats from "../Pages/Components/Stats";
     export default {
         components: {
@@ -75,11 +83,18 @@
             MovingEvents,
             MovingProfiles,
             Navbar,
+            NavbarLink,
+            PillTag,
+            RectTag,
+            NavbarItem,
             Stats
         },
 
         data() {
-            return {}
+            return {
+                'pad_x' : 10,
+                'pad_y' : 2
+            }
         },
 
         methods: {

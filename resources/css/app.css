@@ -1,10 +1,19 @@
-/*:root {
+/* didn't work...
+:root {
     --color-primary: 217, 249, 165;
     --color-secondary: 105, 3, 117;
     --color-trim-a: 244, 254, 193;
     --color-trim-b: 44, 14, 55;
     --color-trim-c: 203, 66, 159;
 }*/
+
+/*
+    Usage:
+
+    font-family: 'PT Sans', sans-serif;
+    font-family: 'Vollkorn', serif;
+*/
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Vollkorn:ital,wght@0,400;0,700;1,400;1,700&display=swap');
 
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';

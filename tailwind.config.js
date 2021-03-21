@@ -11,7 +11,8 @@ module.exports = {
     theme: {
         extend: {
             fontFamily: {
-                sans: ['Nunito', ...defaultTheme.fontFamily.sans],
+                sans: ['PT Sans', 'Nunito', ...defaultTheme.fontFamily.sans],
+                serif: ['Volkorn', ...defaultTheme.fontFamily.serif]
             },
             colors: {
                 'primary': 'rgb(217, 249, 165)',
@@ -19,7 +20,7 @@ module.exports = {
                 'trim-a': 'rgb(244, 254, 193)',
                 'trim-b': 'rgb(44, 14, 55)',
                 'trim-c': 'rgb(203, 66, 159)',
-                /*
+                /* didn't work...
                 'primary': 'var(--color-primary)',
                 'secondary': 'var(--color-secondary)',
                 'trim-a': 'var(--color-trim-a)',

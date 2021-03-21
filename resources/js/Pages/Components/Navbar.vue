@@ -1,7 +1,23 @@
 <template>
     <div>
-        <nav class="bg-trim-a shadow">
-            <div class="container mx-auto px-6 py-3 md:flex md:justify-between md:items-center">
+
+        <nav class="bg-transparent fixed h-32 w-full">
+            <div class="flex justify-between h-32">
+                <div class="flex justify-start items-center">
+                    <a class="m-6" href="#">
+                        <slot name="logo"> up-to-128px x up-to-128px Logo </slot>
+                    </a>
+                </div>
+                <div class="flex justify-end items-center overflow-hidden">
+                    <slot name="options">
+                        NavbarLinks...
+                    </slot>
+                </div>
+            </div>
+        </nav>
+
+        <nav class="bg-transparent shadow hidden">
+            <div class="container md:flex md:justify-between md:items-center">
                 <div class="flex justify-between items-center">
                 <div>
                     <slot name="logo">
@@ -44,6 +60,7 @@
                 </div>
             </div>
         </nav>
+
     </div>
 </template>
 
