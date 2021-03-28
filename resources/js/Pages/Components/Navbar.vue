@@ -1,7 +1,7 @@
 <template>
     <div>
 
-        <nav class="bg-transparent fixed h-32 w-full">
+        <nav class="IGNORE.bg-transparent bg-gradient-to-r from-yellow-50 via-green-50 to-green-100 fixed h-32 w-full">
             <div class="flex justify-between h-32">
                 <div class="flex justify-start items-center">
                     <a class="m-6" href="#">

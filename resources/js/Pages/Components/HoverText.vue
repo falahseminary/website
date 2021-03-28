@@ -1,9 +1,8 @@
 <template>
     <div>
-        <a href="#" class="p-14 self-center
-                IGNORE.hover:bg-yellow-100 IGNORE.focus:bg-yellow-50
-                hover:text-red-500 focus:text-indigo-600
-                transition duration-200 ease-out
+        <a href="#" class="self-center p-4
+                hover:text-primary focus:border-trim-a active:border-trim-c
+                transition duration-500 ease-out
                 text-2xl">
 
             <slot name="text">
