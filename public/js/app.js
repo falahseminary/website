@@ -4564,7 +4564,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var _PopCard__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./PopCard */ "./resources/js/Pages/Components/PopCard.vue");
+/* harmony import */ var _HorizontalScrollArea__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HorizontalScrollArea */ "./resources/js/Pages/Components/HorizontalScrollArea.vue");
+/* harmony import */ var _HorizontalScrollAreaPopCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HorizontalScrollAreaPopCard */ "./resources/js/Pages/Components/HorizontalScrollAreaPopCard.vue");
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -4589,9 +4596,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 
+
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {
-    PopCard: _PopCard__WEBPACK_IMPORTED_MODULE_0__.default
+    HorizontalScrollArea: _HorizontalScrollArea__WEBPACK_IMPORTED_MODULE_0__.default,
+    HorizontalScrollAreaPopCard: _HorizontalScrollAreaPopCard__WEBPACK_IMPORTED_MODULE_1__.default
   },
   data: function data() {
     return {};
@@ -4871,10 +4880,102 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {},
   data: function data() {
     return {};
+  },
+  methods: {}
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Components/HorizontalScrollAreaPopCard.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Components/HorizontalScrollAreaPopCard.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {},
+  data: function data() {
+    return {
+      bg_url: "background-image:url('media/aboutus-bg.jpg')"
+    };
   },
   methods: {}
 });
@@ -28100,6 +28201,45 @@ component.options.__file = "resources/js/Pages/Components/HorizontalScrollArea.v
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Components/HorizontalScrollAreaPopCard.vue":
+/*!***********************************************************************!*\
+  !*** ./resources/js/Pages/Components/HorizontalScrollAreaPopCard.vue ***!
+  \***********************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _HorizontalScrollAreaPopCard_vue_vue_type_template_id_b62d759a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HorizontalScrollAreaPopCard.vue?vue&type=template&id=b62d759a& */ "./resources/js/Pages/Components/HorizontalScrollAreaPopCard.vue?vue&type=template&id=b62d759a&");
+/* harmony import */ var _HorizontalScrollAreaPopCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HorizontalScrollAreaPopCard.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Components/HorizontalScrollAreaPopCard.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _HorizontalScrollAreaPopCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _HorizontalScrollAreaPopCard_vue_vue_type_template_id_b62d759a___WEBPACK_IMPORTED_MODULE_0__.render,
+  _HorizontalScrollAreaPopCard_vue_vue_type_template_id_b62d759a___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Pages/Components/HorizontalScrollAreaPopCard.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Components/HoverText.vue":
 /*!*****************************************************!*\
   !*** ./resources/js/Pages/Components/HoverText.vue ***!
@@ -29901,6 +30041,22 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Components/HorizontalScrollAreaPopCard.vue?vue&type=script&lang=js&":
+/*!************************************************************************************************!*\
+  !*** ./resources/js/Pages/Components/HorizontalScrollAreaPopCard.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_HorizontalScrollAreaPopCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./HorizontalScrollAreaPopCard.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Components/HorizontalScrollAreaPopCard.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_HorizontalScrollAreaPopCard_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Components/HoverText.vue?vue&type=script&lang=js&":
 /*!******************************************************************************!*\
   !*** ./resources/js/Pages/Components/HoverText.vue?vue&type=script&lang=js& ***!
@@ -31124,6 +31280,23 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HorizontalScrollArea_vue_vue_type_template_id_22621d9e___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HorizontalScrollArea_vue_vue_type_template_id_22621d9e___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./HorizontalScrollArea.vue?vue&type=template&id=22621d9e& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Components/HorizontalScrollArea.vue?vue&type=template&id=22621d9e&");
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Components/HorizontalScrollAreaPopCard.vue?vue&type=template&id=b62d759a&":
+/*!******************************************************************************************************!*\
+  !*** ./resources/js/Pages/Components/HorizontalScrollAreaPopCard.vue?vue&type=template&id=b62d759a& ***!
+  \******************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HorizontalScrollAreaPopCard_vue_vue_type_template_id_b62d759a___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HorizontalScrollAreaPopCard_vue_vue_type_template_id_b62d759a___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_HorizontalScrollAreaPopCard_vue_vue_type_template_id_b62d759a___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./HorizontalScrollAreaPopCard.vue?vue&type=template&id=b62d759a& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Components/HorizontalScrollAreaPopCard.vue?vue&type=template&id=b62d759a&");
 
 
 /***/ }),
@@ -36926,94 +37099,145 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [
-    _c("div", [
-      _c(
-        "div",
-        { staticClass: "bg-gray-100 lg:py-12 lg:flex lg:justify-center" },
-        [
-          _c("pop-card", {
-            scopedSlots: _vm._u(
-              [
-                {
-                  key: "title-normal",
-                  fn: function() {
-                    return [_vm._v("About")]
-                  },
-                  proxy: true
-                },
-                {
-                  key: "title-highlighted",
-                  fn: function() {
-                    return [_vm._v("Us")]
-                  },
-                  proxy: true
-                },
-                {
-                  key: "text",
-                  fn: function() {
-                    return [
-                      _vm._t("about-text", [_vm._v("Lorem ipsum blah blah.")])
-                    ]
-                  },
-                  proxy: true
-                },
-                {
-                  key: "footer",
-                  fn: function() {
-                    return undefined
-                  },
-                  proxy: true
-                }
-              ],
-              null,
-              true
-            )
-          }),
-          _vm._v(" "),
-          _c("pop-card", {
-            scopedSlots: _vm._u(
-              [
-                {
-                  key: "title-normal",
-                  fn: function() {
-                    return [_vm._v("Our")]
-                  },
-                  proxy: true
-                },
-                {
-                  key: "title-highlighted",
-                  fn: function() {
-                    return [_vm._v("Vision")]
-                  },
-                  proxy: true
-                },
-                {
-                  key: "text",
-                  fn: function() {
-                    return [
-                      _vm._t("vision-text", [_vm._v("Lorem ipsum blah blah.")])
-                    ]
-                  },
-                  proxy: true
-                },
-                {
-                  key: "footer",
-                  fn: function() {
-                    return undefined
-                  },
-                  proxy: true
-                }
-              ],
-              null,
-              true
-            )
-          })
-        ],
-        1
-      )
-    ])
-  ])
+  return _c(
+    "div",
+    [
+      _c("horizontal-scroll-area", {
+        scopedSlots: _vm._u([
+          {
+            key: "title",
+            fn: function() {
+              return [_vm._v("​")]
+            },
+            proxy: true
+          },
+          {
+            key: "area",
+            fn: function() {
+              return [
+                _c("horizontal-scroll-area-pop-card", {
+                  scopedSlots: _vm._u(
+                    [
+                      {
+                        key: "title-normal",
+                        fn: function() {
+                          return [_vm._v("About")]
+                        },
+                        proxy: true
+                      },
+                      {
+                        key: "title-highlighted",
+                        fn: function() {
+                          return [_vm._v("Us")]
+                        },
+                        proxy: true
+                      },
+                      {
+                        key: "text",
+                        fn: function() {
+                          return [
+                            _vm._t("about-text", [
+                              _vm._v("Lorem ipsum blah blah.")
+                            ])
+                          ]
+                        },
+                        proxy: true
+                      },
+                      {
+                        key: "footer",
+                        fn: function() {
+                          return [_vm._v("​")]
+                        },
+                        proxy: true
+                      }
+                    ],
+                    null,
+                    true
+                  )
+                }),
+                _vm._v(" "),
+                _c("horizontal-scroll-area-pop-card", {
+                  scopedSlots: _vm._u(
+                    [
+                      {
+                        key: "title-normal",
+                        fn: function() {
+                          return [_vm._v("Our")]
+                        },
+                        proxy: true
+                      },
+                      {
+                        key: "title-highlighted",
+                        fn: function() {
+                          return [_vm._v("Vision")]
+                        },
+                        proxy: true
+                      },
+                      {
+                        key: "text",
+                        fn: function() {
+                          return [
+                            _vm._t("vision-text", [
+                              _vm._v("Lorem ipsum blah blah.")
+                            ])
+                          ]
+                        },
+                        proxy: true
+                      },
+                      {
+                        key: "footer",
+                        fn: function() {
+                          return [_vm._v("​")]
+                        },
+                        proxy: true
+                      }
+                    ],
+                    null,
+                    true
+                  )
+                }),
+                _vm._v(" "),
+                _c("horizontal-scroll-area-pop-card", {
+                  scopedSlots: _vm._u([
+                    {
+                      key: "title-normal",
+                      fn: function() {
+                        return [_vm._v("This is a")]
+                      },
+                      proxy: true
+                    },
+                    {
+                      key: "title-highlighted",
+                      fn: function() {
+                        return [_vm._v("Test")]
+                      },
+                      proxy: true
+                    },
+                    {
+                      key: "text",
+                      fn: function() {
+                        return [_vm._v("Lorem ipsum blah blah.")]
+                      },
+                      proxy: true
+                    },
+                    {
+                      key: "footer",
+                      fn: function() {
+                        return [_vm._v("​")]
+                      },
+                      proxy: true
+                    }
+                  ])
+                })
+              ]
+            },
+            proxy: true
+          }
+        ])
+      })
+    ],
+    1
+  )
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -37547,58 +37771,170 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "flex flex-col bg-white m-auto p-auto" }, [
+    _c(
+      "h1",
+      { staticClass: "flex py-5 px-10 mx-20 font-bold text-4xl text-gray-800" },
+      [_vm._t("title", [_vm._v("Horizontal Scroll Area Title here...")])],
+      2
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "flex overflow-x-scroll pb-10 hide-scroll-bar" }, [
+      _c(
+        "div",
+        { staticClass: "flex flex-nowrap justify-center lg:w-full" },
+        [
+          _vm._t("area", [
+            _vm._m(0),
+            _vm._v(" "),
+            _vm._m(1),
+            _vm._v(" "),
+            _vm._m(2)
+          ])
+        ],
+        2
+      )
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "flex flex-col bg-white m-auto p-auto" }, [
-      _c(
-        "h1",
-        {
-          staticClass:
-            "flex py-5 lg:px-20 md:px-10 px-5 lg:mx-40 md:mx-20 mx-5 font-bold text-4xl text-gray-800"
-        },
-        [_vm._v("\n        Example\n    ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "div",
-        { staticClass: "flex overflow-x-scroll pb-10 hide-scroll-bar" },
-        [
-          _c(
-            "div",
-            { staticClass: "flex flex-nowrap lg:ml-40 md:ml-20 ml-10 " },
-            [
-              _c("div", { staticClass: "inline-block px-3" }, [
-                _c("div", {
-                  staticClass:
-                    "w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "inline-block px-3" }, [
-                _c("div", {
-                  staticClass:
-                    "w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-                })
-              ]),
-              _vm._v(" "),
-              _c("div", { staticClass: "inline-block px-3" }, [
-                _c("div", {
-                  staticClass:
-                    "w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
-                })
-              ])
-            ]
-          )
-        ]
-      )
+    return _c("div", { staticClass: "inline-block px-3" }, [
+      _c("div", {
+        staticClass:
+          "w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "inline-block px-3" }, [
+      _c("div", {
+        staticClass:
+          "w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "inline-block px-3" }, [
+      _c("div", {
+        staticClass:
+          "w-64 h-64 max-w-xs overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+      })
     ])
   }
 ]
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Components/HorizontalScrollAreaPopCard.vue?vue&type=template&id=b62d759a&":
+/*!*********************************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Components/HorizontalScrollAreaPopCard.vue?vue&type=template&id=b62d759a& ***!
+  \*********************************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c("div", [
+    _c("div", { staticClass: "inline-block px-5" }, [
+      _c(
+        "div",
+        {
+          staticClass:
+            "w-96 lg:w-128 lg:flex overflow-hidden rounded-lg shadow-md bg-white hover:shadow-xl transition-shadow duration-300 ease-in-out"
+        },
+        [
+          _c("div", { staticClass: "lg:w-1/2" }, [
+            _c("div", {
+              staticClass: "bg-cover lg:h-full lg:w-full h-64",
+              style: _vm.bg_url
+            })
+          ]),
+          _vm._v(" "),
+          _c("div", { staticClass: "max-w-5xl h-96 lg:w-1/2" }, [
+            _c(
+              "h2",
+              { staticClass: "text-3xl text-gray-800 font-bold" },
+              [
+                _vm._t("title-normal", [
+                  _vm._v(
+                    "\n                        Build Your New\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c(
+                  "span",
+                  { staticClass: "text-indigo-600" },
+                  [
+                    _vm._t("title-highlighted", [
+                      _vm._v(
+                        "\n                            Idea\n                        "
+                      )
+                    ])
+                  ],
+                  2
+                )
+              ],
+              2
+            ),
+            _vm._v(" "),
+            _c(
+              "p",
+              { staticClass: "mt-4 text-gray-600" },
+              [
+                _vm._t("text", [
+                  _vm._v(
+                    "\n                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem modi reprehenderit vitae exercitationem aliquid dolores ullam temporibus enim expedita aperiam mollitia iure consectetur dicta tenetur, porro consequuntur saepe accusantium consequatur.\n                    "
+                  )
+                ])
+              ],
+              2
+            ),
+            _vm._v(" "),
+            _c(
+              "div",
+              { staticClass: "mt-8" },
+              [
+                _vm._t("footer", [
+                  _c(
+                    "a",
+                    {
+                      staticClass:
+                        "bg-gray-900 text-gray-100 px-5 py-3 font-semibold rounded",
+                      attrs: { href: "#" }
+                    },
+                    [_vm._v("Start Now")]
+                  )
+                ])
+              ],
+              2
+            )
+          ])
+        ]
+      )
+    ])
+  ])
+}
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -53673,6 +54009,8 @@ var map = {
 	"./Components/HeaderContent.vue": "./resources/js/Pages/Components/HeaderContent.vue",
 	"./Components/HorizontalScrollArea": "./resources/js/Pages/Components/HorizontalScrollArea.vue",
 	"./Components/HorizontalScrollArea.vue": "./resources/js/Pages/Components/HorizontalScrollArea.vue",
+	"./Components/HorizontalScrollAreaPopCard": "./resources/js/Pages/Components/HorizontalScrollAreaPopCard.vue",
+	"./Components/HorizontalScrollAreaPopCard.vue": "./resources/js/Pages/Components/HorizontalScrollAreaPopCard.vue",
 	"./Components/HoverText": "./resources/js/Pages/Components/HoverText.vue",
 	"./Components/HoverText.vue": "./resources/js/Pages/Components/HoverText.vue",
 	"./Components/MovingAnnouncements": "./resources/js/Pages/Components/MovingAnnouncements.vue",
