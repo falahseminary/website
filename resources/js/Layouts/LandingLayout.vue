@@ -58,7 +58,7 @@
             </template>
         </moving-profiles>
 
-        <footer-content class="hidden">
+        <footer-content>
             <template #topics>
                 Topics...
             </template>
