@@ -5,7 +5,7 @@
                 Fake Supertext
             </slot>
         </div>
-        <div class="font-sans text-7xl text-black pt-32 font-bold">
+        <div class="font-sans text-7xl text-gray-900 pt-32 font-bold">
             <slot name="title">
                 Fake Title
             </slot>

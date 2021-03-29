@@ -2,48 +2,33 @@
     <div>
         <!-- pasted from: https://tailwindcomponents.com/component/responsive-footer-2 -->
 
-
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@3.0.6/css/line.css">
 
-        <h1 class="text-center font-bold my-20">
-            Footer icons required Unicons (npm i @iconscout/unicons)
-        </h1>
-
-        <footer class="bg-gray-800 pt-10 sm:mt-10">
+        <footer class="bg-gray-800 pt-10">
             <div class="max-w-6xl m-auto text-gray-800 flex flex-wrap justify-left">
                 <!-- Col-1 -->
                 <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
 
-                    <slot name="topics">
-                        Malformed Topics
-                    </slot>
-
                     <!-- Col Title -->
                     <div class="text-xs uppercase text-gray-400 font-medium mb-6">
-                        Getting Started
+                        Quick Links
                     </div>
 
                     <!-- Links -->
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Installation
+                    <a href="https://falahseminary.org/" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+                        Home
                     </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Release Notes
+                    <a href="https://masjidicc.com/" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+                        Masjid ICC
                     </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Upgrade Guide
+                    <a href="https://masjidicc.com/donate/" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+                        Donate
                     </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Using with Preprocessors
+                    <a href="https://github.com/falahseminary" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+                        Development
                     </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Optimizing for Production
-                    </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Browser Support
-                    </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        IntelliSense
+                    <a href="https://masjidicc.com/seminary/" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+                        Old Home
                     </a>
                 </div>
 
@@ -51,30 +36,24 @@
                 <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
                     <!-- Col Title -->
                     <div class="text-xs uppercase text-gray-400 font-medium mb-6">
-                        Core Concepts
+                        Masjid
                     </div>
 
                     <!-- Links -->
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Utility-First
+                    <a href="https://masjidicc.com/" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+                        Home
                     </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Responsive Design
+                    <a href="https://masjidicc.com/donate/" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+                        Donate
                     </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Hover, Focus, & Other States
+                    <a href="https://masjidicc.com/seminary/" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+                        Falah Seminary (Old)
                     </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Dark Mode
+                    <a href="https://masjidicc.com/about-us/" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+                        About Us
                     </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Adding Base Styles
-                    </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Extracting Components
-                    </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Adding New Utilities
+                    <a href="https://www.youtube.com/watch?v=6pFabzDqaXc" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+                        Introduction Video
                     </a>
                 </div>
 
@@ -82,30 +61,27 @@
                 <div class="p-5 w-1/2 sm:w-4/12 md:w-3/12">
                     <!-- Col Title -->
                     <div class="text-xs uppercase text-gray-400 font-medium mb-6">
-                        Customization
+                        Development
                     </div>
 
                     <!-- Links -->
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Configuration
+                    <a href="https://github.com/falahseminary" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+                        Home
                     </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Theme Configuration
+                    <a href="https://github.com/Ibsardar" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+                        Author
                     </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Breakpoints
+                    <a href="https://jetstream.laravel.com/" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+                        Laravel Jetstream
                     </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Customizing Colors
+                    <a href="https://tailwindcss.com/" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+                        Tailwind CSS
                     </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Customizing Spacing
+                    <a href="https://vuejs.org/" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+                        Vue
                     </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Configuring Variants
-                    </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Plugins
+                    <a href="https://inertiajs.com/" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+                        Inertia
                     </a>
                 </div>
 
@@ -117,17 +93,17 @@
                     </div>
 
                     <!-- Links -->
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        GitHub
-                    </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        Discord
-                    </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+                    <a href="https://twitter.com/IslamicCenterC1" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
                         Twitter
                     </a>
-                    <a href="#" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
-                        YouTube
+                    <a href="https://www.facebook.com/ICCMasjid/" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+                        Facebook
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCULgqCfvbsRtP6661l6vieg" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+                        Youtube
+                    </a>
+                    <a href="https://github.com/falahseminary" class="my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700">
+                        GitHub
                     </a>
                 </div>
             </div>
@@ -138,24 +114,25 @@
                     border-t border-gray-500 text-gray-400 text-sm 
                     flex-col md:flex-row max-w-6xl">
                     <div class="mt-2">
-                        © Copyright 1998-year. All Rights Reserved.
+                        <slot name="credits">
+                            Fake credits...
+                        </slot>
+                        <br>
+                        © Copyright 2021. All Rights Reserved.
                     </div>
 
                     <!-- Required Unicons (if you want) -->
-                    <div class="md:flex-auto md:flex-row-reverse mt-2 flex-row flex">
-                        <a href="#" class="w-6 mx-1">
+                    <div class="md:flex-auto md:flex-row-reverse mt-4 flex-row flex">
+                        <a href="https://www.facebook.com/ICCMasjid/" class="w-6 mx-1">
                             <i class="uil uil-facebook-f"></i>
                         </a>
-                        <a href="#" class="w-6 mx-1">
+                        <a href="https://twitter.com/IslamicCenterC1" class="w-6 mx-1">
                             <i class="uil uil-twitter-alt"></i>
                         </a>
-                        <a href="#" class="w-6 mx-1">
+                        <a href="https://www.youtube.com/channel/UCULgqCfvbsRtP6661l6vieg" class="w-6 mx-1">
                             <i class="uil uil-youtube"></i>
                         </a>
-                        <a href="#" class="w-6 mx-1">
-                            <i class="uil uil-linkedin"></i>
-                        </a>
-                        <a href="#" class="w-6 mx-1">
+                        <a href="https://www.instagram.com/invites/contact/?i=1i9kk8q0k6ozu&utm_content=kklodpo" class="w-6 mx-1">
                             <i class="uil uil-instagram"></i>
                         </a>
                     </div>

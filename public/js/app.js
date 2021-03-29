@@ -3443,6 +3443,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _Pages_Components_HoverText__WEBPACK_IMPORTED_MODULE_11__ = __webpack_require__(/*! ../Pages/Components/HoverText */ "./resources/js/Pages/Components/HoverText.vue");
 /* harmony import */ var _Pages_Components_Stats__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! ../Pages/Components/Stats */ "./resources/js/Pages/Components/Stats.vue");
 /* harmony import */ var _Pages_Components_MidPageHeader__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! ../Pages/Components/MidPageHeader */ "./resources/js/Pages/Components/MidPageHeader.vue");
+/* harmony import */ var _Pages_Components_MidPageHeaderLg__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! ../Pages/Components/MidPageHeaderLg */ "./resources/js/Pages/Components/MidPageHeaderLg.vue");
+/* harmony import */ var _Pages_Components_MidPageHeaderSm__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ../Pages/Components/MidPageHeaderSm */ "./resources/js/Pages/Components/MidPageHeaderSm.vue");
+/* harmony import */ var _Pages_Components_HorizontalScrollAreaPopCard__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ../Pages/Components/HorizontalScrollAreaPopCard */ "./resources/js/Pages/Components/HorizontalScrollAreaPopCard.vue");
 //
 //
 //
@@ -3518,6 +3521,37 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+
+
+
 
 
 
@@ -3547,7 +3581,10 @@ __webpack_require__.r(__webpack_exports__);
     HoverText: _Pages_Components_HoverText__WEBPACK_IMPORTED_MODULE_11__.default,
     NavbarItem: _Pages_Components_NavbarItem__WEBPACK_IMPORTED_MODULE_7__.default,
     Stats: _Pages_Components_Stats__WEBPACK_IMPORTED_MODULE_12__.default,
-    MidPageHeader: _Pages_Components_MidPageHeader__WEBPACK_IMPORTED_MODULE_13__.default
+    MidPageHeader: _Pages_Components_MidPageHeader__WEBPACK_IMPORTED_MODULE_13__.default,
+    MidPageHeaderLg: _Pages_Components_MidPageHeaderLg__WEBPACK_IMPORTED_MODULE_14__.default,
+    MidPageHeaderSm: _Pages_Components_MidPageHeaderSm__WEBPACK_IMPORTED_MODULE_15__.default,
+    HorizontalScrollAreaPopCard: _Pages_Components_HorizontalScrollAreaPopCard__WEBPACK_IMPORTED_MODULE_16__.default
   },
   data: function data() {
     return {};
@@ -3555,6 +3592,12 @@ __webpack_require__.r(__webpack_exports__);
   methods: {
     logout: function logout() {
       this.$inertia.post(route('logout'));
+    },
+    goto_icc_page: function goto_icc_page() {
+      window.location = 'https://masjidicc.com/';
+    },
+    goto_donate_page: function goto_donate_page() {
+      window.location = 'https://masjidicc.com/donate/';
     }
   },
   props: ['logo_src']
@@ -4772,29 +4815,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {},
   data: function data() {
@@ -5141,6 +5161,8 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {},
   data: function data() {
@@ -5195,6 +5217,74 @@ __webpack_require__.r(__webpack_exports__);
 /*!**************************************************************************************************************************************************************************************************************************!*\
   !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Components/MidPageHeader.vue?vue&type=script&lang=js& ***!
   \**************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {},
+  data: function data() {
+    return {
+      'bg_url': 'background-image: url("media/bg-2-lighter.svg");'
+    };
+  },
+  methods: {}
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Components/MidPageHeaderLg.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Components/MidPageHeaderLg.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  components: {},
+  data: function data() {
+    return {
+      'bg_url': 'background-image: url("media/bg-2-lighter.svg");'
+    };
+  },
+  methods: {}
+});
+
+/***/ }),
+
+/***/ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Components/MidPageHeaderSm.vue?vue&type=script&lang=js&":
+/*!****************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Components/MidPageHeaderSm.vue?vue&type=script&lang=js& ***!
+  \****************************************************************************************************************************************************************************************************************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -5338,6 +5428,47 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
@@ -5348,7 +5479,29 @@ __webpack_require__.r(__webpack_exports__);
   data: function data() {
     return {};
   },
-  methods: {}
+  methods: {
+    bio_ms: function bio_ms() {
+      window.location = "https://masjidicc.com/team-member/7/?n=Mufti+Suleiman&pageName=seminary";
+    },
+    bio_ma: function bio_ma() {
+      window.location = "https://masjidicc.com/team-member/25/?n=Maulana+Aiyub&pageName=seminary";
+    },
+    bio_my: function bio_my() {
+      window.location = "https://masjidicc.com/team-member/8/?n=Moulana+Yasir&pageName=seminary";
+    },
+    bio_mb: function bio_mb() {
+      window.location = "https://masjidicc.com/team-member/9/?n=Moulana+Bilal&pageName=seminary";
+    },
+    bio_mis: function bio_mis() {
+      window.location = "https://masjidicc.com/team-member/10/?n=Moulana+Ismael&pageName=seminary";
+    },
+    bio_mib: function bio_mib() {
+      window.location = "https://masjidicc.com/team-member/6/?n=Moulana+Ibrahim&pageName=seminary";
+    },
+    bio_mm: function bio_mm() {
+      alert('Moulana Mohtasim does not have a bio yet!');
+    }
+  }
 });
 
 /***/ }),
@@ -28654,6 +28807,84 @@ component.options.__file = "resources/js/Pages/Components/MidPageHeader.vue"
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Components/MidPageHeaderLg.vue":
+/*!***********************************************************!*\
+  !*** ./resources/js/Pages/Components/MidPageHeaderLg.vue ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _MidPageHeaderLg_vue_vue_type_template_id_f5da0162___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MidPageHeaderLg.vue?vue&type=template&id=f5da0162& */ "./resources/js/Pages/Components/MidPageHeaderLg.vue?vue&type=template&id=f5da0162&");
+/* harmony import */ var _MidPageHeaderLg_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MidPageHeaderLg.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Components/MidPageHeaderLg.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _MidPageHeaderLg_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _MidPageHeaderLg_vue_vue_type_template_id_f5da0162___WEBPACK_IMPORTED_MODULE_0__.render,
+  _MidPageHeaderLg_vue_vue_type_template_id_f5da0162___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Pages/Components/MidPageHeaderLg.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Components/MidPageHeaderSm.vue":
+/*!***********************************************************!*\
+  !*** ./resources/js/Pages/Components/MidPageHeaderSm.vue ***!
+  \***********************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _MidPageHeaderSm_vue_vue_type_template_id_dd4d0ea4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./MidPageHeaderSm.vue?vue&type=template&id=dd4d0ea4& */ "./resources/js/Pages/Components/MidPageHeaderSm.vue?vue&type=template&id=dd4d0ea4&");
+/* harmony import */ var _MidPageHeaderSm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./MidPageHeaderSm.vue?vue&type=script&lang=js& */ "./resources/js/Pages/Components/MidPageHeaderSm.vue?vue&type=script&lang=js&");
+/* harmony import */ var _node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! !../../../../node_modules/vue-loader/lib/runtime/componentNormalizer.js */ "./node_modules/vue-loader/lib/runtime/componentNormalizer.js");
+
+
+
+
+
+/* normalize component */
+;
+var component = (0,_node_modules_vue_loader_lib_runtime_componentNormalizer_js__WEBPACK_IMPORTED_MODULE_2__.default)(
+  _MidPageHeaderSm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_1__.default,
+  _MidPageHeaderSm_vue_vue_type_template_id_dd4d0ea4___WEBPACK_IMPORTED_MODULE_0__.render,
+  _MidPageHeaderSm_vue_vue_type_template_id_dd4d0ea4___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns,
+  false,
+  null,
+  null,
+  null
+  
+)
+
+/* hot reload */
+if (false) { var api; }
+component.options.__file = "resources/js/Pages/Components/MidPageHeaderSm.vue"
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (component.exports);
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Components/MovingAnnouncements.vue":
 /*!***************************************************************!*\
   !*** ./resources/js/Pages/Components/MovingAnnouncements.vue ***!
@@ -30512,6 +30743,38 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/js/Pages/Components/MidPageHeaderLg.vue?vue&type=script&lang=js&":
+/*!************************************************************************************!*\
+  !*** ./resources/js/Pages/Components/MidPageHeaderLg.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MidPageHeaderLg_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./MidPageHeaderLg.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Components/MidPageHeaderLg.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MidPageHeaderLg_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Components/MidPageHeaderSm.vue?vue&type=script&lang=js&":
+/*!************************************************************************************!*\
+  !*** ./resources/js/Pages/Components/MidPageHeaderSm.vue?vue&type=script&lang=js& ***!
+  \************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+/* harmony import */ var _node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MidPageHeaderSm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./MidPageHeaderSm.vue?vue&type=script&lang=js& */ "./node_modules/babel-loader/lib/index.js??clonedRuleSet-5[0].rules[0].use[0]!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Components/MidPageHeaderSm.vue?vue&type=script&lang=js&");
+ /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (_node_modules_babel_loader_lib_index_js_clonedRuleSet_5_0_rules_0_use_0_node_modules_vue_loader_lib_index_js_vue_loader_options_MidPageHeaderSm_vue_vue_type_script_lang_js___WEBPACK_IMPORTED_MODULE_0__.default); 
+
+/***/ }),
+
 /***/ "./resources/js/Pages/Components/MovingAnnouncements.vue?vue&type=script&lang=js&":
 /*!****************************************************************************************!*\
   !*** ./resources/js/Pages/Components/MovingAnnouncements.vue?vue&type=script&lang=js& ***!
@@ -31821,6 +32084,40 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_MidPageHeader_vue_vue_type_template_id_038e9b98___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
 /* harmony export */ });
 /* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_MidPageHeader_vue_vue_type_template_id_038e9b98___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./MidPageHeader.vue?vue&type=template&id=038e9b98& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Components/MidPageHeader.vue?vue&type=template&id=038e9b98&");
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Components/MidPageHeaderLg.vue?vue&type=template&id=f5da0162&":
+/*!******************************************************************************************!*\
+  !*** ./resources/js/Pages/Components/MidPageHeaderLg.vue?vue&type=template&id=f5da0162& ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_MidPageHeaderLg_vue_vue_type_template_id_f5da0162___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_MidPageHeaderLg_vue_vue_type_template_id_f5da0162___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_MidPageHeaderLg_vue_vue_type_template_id_f5da0162___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./MidPageHeaderLg.vue?vue&type=template&id=f5da0162& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Components/MidPageHeaderLg.vue?vue&type=template&id=f5da0162&");
+
+
+/***/ }),
+
+/***/ "./resources/js/Pages/Components/MidPageHeaderSm.vue?vue&type=template&id=dd4d0ea4&":
+/*!******************************************************************************************!*\
+  !*** ./resources/js/Pages/Components/MidPageHeaderSm.vue?vue&type=template&id=dd4d0ea4& ***!
+  \******************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_MidPageHeaderSm_vue_vue_type_template_id_dd4d0ea4___WEBPACK_IMPORTED_MODULE_0__.render),
+/* harmony export */   "staticRenderFns": () => (/* reexport safe */ _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_MidPageHeaderSm_vue_vue_type_template_id_dd4d0ea4___WEBPACK_IMPORTED_MODULE_0__.staticRenderFns)
+/* harmony export */ });
+/* harmony import */ var _node_modules_vue_loader_lib_loaders_templateLoader_js_vue_loader_options_node_modules_vue_loader_lib_index_js_vue_loader_options_MidPageHeaderSm_vue_vue_type_template_id_dd4d0ea4___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! -!../../../../node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!../../../../node_modules/vue-loader/lib/index.js??vue-loader-options!./MidPageHeaderSm.vue?vue&type=template&id=dd4d0ea4& */ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Components/MidPageHeaderSm.vue?vue&type=template&id=dd4d0ea4&");
 
 
 /***/ }),
@@ -35719,17 +36016,57 @@ var render = function() {
             key: "options",
             fn: function() {
               return [
-                _c("navbar-link", {
-                  scopedSlots: _vm._u([
-                    {
-                      key: "text",
-                      fn: function() {
-                        return [_vm._v("Masjid ICC")]
-                      },
-                      proxy: true
+                _c(
+                  "div",
+                  {
+                    staticClass:
+                      "font-bold bg-yellow-400 rounded-lg shadow-md hover:bg-yellow-300 focus:shadow-sm transition duration-100 ease-out",
+                    on: {
+                      click: function($event) {
+                        return _vm.goto_donate_page()
+                      }
                     }
-                  ])
-                }),
+                  },
+                  [
+                    _c("navbar-link", {
+                      scopedSlots: _vm._u([
+                        {
+                          key: "text",
+                          fn: function() {
+                            return [_vm._v("Donate")]
+                          },
+                          proxy: true
+                        }
+                      ])
+                    })
+                  ],
+                  1
+                ),
+                _vm._v(" "),
+                _c(
+                  "div",
+                  {
+                    on: {
+                      click: function($event) {
+                        return _vm.goto_icc_page()
+                      }
+                    }
+                  },
+                  [
+                    _c("navbar-link", {
+                      scopedSlots: _vm._u([
+                        {
+                          key: "text",
+                          fn: function() {
+                            return [_vm._v("Masjid ICC")]
+                          },
+                          proxy: true
+                        }
+                      ])
+                    })
+                  ],
+                  1
+                ),
                 _vm._v(" "),
                 _c("navbar-link", {
                   scopedSlots: _vm._u([
@@ -35859,15 +36196,80 @@ var render = function() {
       _vm._v(" "),
       _c("moving-profiles"),
       _vm._v(" "),
-      _c("footer-content", {
+      _c("mid-page-header-sm", {
         scopedSlots: _vm._u([
           {
-            key: "topics",
+            key: "title",
             fn: function() {
-              return [_vm._v("\n            Topics...\n        ")]
+              return [
+                _vm._v("\n            Contact Us\n            "),
+                _c("div", { staticClass: "grid grid-cols-10 gap-2 pt-12" }, [
+                  _c(
+                    "div",
+                    { staticClass: "text-xl text-indigo-800 font-bold" },
+                    [_vm._v("\n                    Addr:\n                ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "text-xl col-span-9 hover:text-red-500 transition duration-200 ease-out"
+                    },
+                    [
+                      _vm._v(
+                        "\n                    10501 Success Ln Washington Township OH\n                "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "text-xl text-indigo-800 font-bold" },
+                    [_vm._v("\n                    Phone:\n                ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "text-xl col-span-9 hover:text-red-500 transition duration-200 ease-out"
+                    },
+                    [
+                      _vm._v(
+                        "\n                    5026442994\n                "
+                      )
+                    ]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    { staticClass: "text-xl text-indigo-800 font-bold" },
+                    [_vm._v("\n                    Em:\n                ")]
+                  ),
+                  _vm._v(" "),
+                  _c(
+                    "div",
+                    {
+                      staticClass:
+                        "text-xl col-span-9 hover:text-red-500 transition duration-200 ease-out"
+                    },
+                    [
+                      _vm._v(
+                        "\n                    iccenterville@gmail.com\n                "
+                      )
+                    ]
+                  )
+                ])
+              ]
             },
             proxy: true
-          },
+          }
+        ])
+      }),
+      _vm._v(" "),
+      _c("footer-content", {
+        scopedSlots: _vm._u([
           {
             key: "credits",
             fn: function() {
@@ -35881,7 +36283,7 @@ var render = function() {
                   },
                   [
                     _vm._v(
-                      "Background vector created by kjpargeter - www.freepik.com"
+                      "Original background vector created by kjpargeter - www.freepik.com"
                     )
                   ]
                 )
@@ -37738,145 +38140,39 @@ var render = function() {
       }
     }),
     _vm._v(" "),
-    _c("h1", { staticClass: "text-center font-bold my-20" }, [
-      _vm._v(
-        "\n        Footer icons required Unicons (npm i @iconscout/unicons)\n    "
-      )
-    ]),
-    _vm._v(" "),
-    _c("footer", { staticClass: "bg-gray-800 pt-10 sm:mt-10" }, [
-      _c(
-        "div",
-        {
-          staticClass:
-            "max-w-6xl m-auto text-gray-800 flex flex-wrap justify-left"
-        },
-        [
-          _c(
-            "div",
-            { staticClass: "p-5 w-1/2 sm:w-4/12 md:w-3/12" },
-            [
-              _vm._t("topics", [
-                _vm._v(
-                  "\n                    Malformed Topics\n                "
-                )
-              ]),
-              _vm._v(" "),
-              _c(
-                "div",
-                {
-                  staticClass:
-                    "text-xs uppercase text-gray-400 font-medium mb-6"
-                },
-                [
-                  _vm._v(
-                    "\n                    Getting Started\n                "
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass:
-                    "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-                  attrs: { href: "#" }
-                },
-                [_vm._v("\n                    Installation\n                ")]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass:
-                    "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-                  attrs: { href: "#" }
-                },
-                [
-                  _vm._v(
-                    "\n                    Release Notes\n                "
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass:
-                    "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-                  attrs: { href: "#" }
-                },
-                [
-                  _vm._v(
-                    "\n                    Upgrade Guide\n                "
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass:
-                    "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-                  attrs: { href: "#" }
-                },
-                [
-                  _vm._v(
-                    "\n                    Using with Preprocessors\n                "
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass:
-                    "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-                  attrs: { href: "#" }
-                },
-                [
-                  _vm._v(
-                    "\n                    Optimizing for Production\n                "
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass:
-                    "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-                  attrs: { href: "#" }
-                },
-                [
-                  _vm._v(
-                    "\n                    Browser Support\n                "
-                  )
-                ]
-              ),
-              _vm._v(" "),
-              _c(
-                "a",
-                {
-                  staticClass:
-                    "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-                  attrs: { href: "#" }
-                },
-                [_vm._v("\n                    IntelliSense\n                ")]
-              )
-            ],
-            2
-          ),
-          _vm._v(" "),
-          _vm._m(0),
-          _vm._v(" "),
-          _vm._m(1),
-          _vm._v(" "),
-          _vm._m(2)
-        ]
-      ),
+    _c("footer", { staticClass: "bg-gray-800 pt-10" }, [
+      _vm._m(0),
       _vm._v(" "),
-      _vm._m(3)
+      _c("div", { staticClass: "pt-2" }, [
+        _c(
+          "div",
+          {
+            staticClass:
+              "flex pb-5 px-3 m-auto pt-5 \n                border-t border-gray-500 text-gray-400 text-sm \n                flex-col md:flex-row max-w-6xl"
+          },
+          [
+            _c(
+              "div",
+              { staticClass: "mt-2" },
+              [
+                _vm._t("credits", [
+                  _vm._v(
+                    "\n                        Fake credits...\n                    "
+                  )
+                ]),
+                _vm._v(" "),
+                _c("br"),
+                _vm._v(
+                  "\n                    © Copyright 2021. All Rights Reserved.\n                "
+                )
+              ],
+              2
+            ),
+            _vm._v(" "),
+            _vm._m(1)
+          ]
+        )
+      ])
     ])
   ])
 }
@@ -37885,274 +38181,311 @@ var staticRenderFns = [
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "p-5 w-1/2 sm:w-4/12 md:w-3/12" }, [
-      _c(
-        "div",
-        { staticClass: "text-xs uppercase text-gray-400 font-medium mb-6" },
-        [_vm._v("\n                    Core Concepts\n                ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass:
-            "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-          attrs: { href: "#" }
-        },
-        [_vm._v("\n                    Utility-First\n                ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass:
-            "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-          attrs: { href: "#" }
-        },
-        [_vm._v("\n                    Responsive Design\n                ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass:
-            "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-          attrs: { href: "#" }
-        },
-        [
-          _vm._v(
-            "\n                    Hover, Focus, & Other States\n                "
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass:
-            "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-          attrs: { href: "#" }
-        },
-        [_vm._v("\n                    Dark Mode\n                ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass:
-            "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-          attrs: { href: "#" }
-        },
-        [_vm._v("\n                    Adding Base Styles\n                ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass:
-            "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-          attrs: { href: "#" }
-        },
-        [
-          _vm._v(
-            "\n                    Extracting Components\n                "
-          )
-        ]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass:
-            "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-          attrs: { href: "#" }
-        },
-        [_vm._v("\n                    Adding New Utilities\n                ")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "p-5 w-1/2 sm:w-4/12 md:w-3/12" }, [
-      _c(
-        "div",
-        { staticClass: "text-xs uppercase text-gray-400 font-medium mb-6" },
-        [_vm._v("\n                    Customization\n                ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass:
-            "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-          attrs: { href: "#" }
-        },
-        [_vm._v("\n                    Configuration\n                ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass:
-            "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-          attrs: { href: "#" }
-        },
-        [_vm._v("\n                    Theme Configuration\n                ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass:
-            "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-          attrs: { href: "#" }
-        },
-        [_vm._v("\n                    Breakpoints\n                ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass:
-            "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-          attrs: { href: "#" }
-        },
-        [_vm._v("\n                    Customizing Colors\n                ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass:
-            "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-          attrs: { href: "#" }
-        },
-        [_vm._v("\n                    Customizing Spacing\n                ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass:
-            "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-          attrs: { href: "#" }
-        },
-        [_vm._v("\n                    Configuring Variants\n                ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass:
-            "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-          attrs: { href: "#" }
-        },
-        [_vm._v("\n                    Plugins\n                ")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "p-5 w-1/2 sm:w-4/12 md:w-3/12" }, [
-      _c(
-        "div",
-        { staticClass: "text-xs uppercase text-gray-400 font-medium mb-6" },
-        [_vm._v("\n                    Community\n                ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass:
-            "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-          attrs: { href: "#" }
-        },
-        [_vm._v("\n                    GitHub\n                ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass:
-            "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-          attrs: { href: "#" }
-        },
-        [_vm._v("\n                    Discord\n                ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass:
-            "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-          attrs: { href: "#" }
-        },
-        [_vm._v("\n                    Twitter\n                ")]
-      ),
-      _vm._v(" "),
-      _c(
-        "a",
-        {
-          staticClass:
-            "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
-          attrs: { href: "#" }
-        },
-        [_vm._v("\n                    YouTube\n                ")]
-      )
-    ])
-  },
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "pt-2" }, [
-      _c(
-        "div",
-        {
-          staticClass:
-            "flex pb-5 px-3 m-auto pt-5 \n                border-t border-gray-500 text-gray-400 text-sm \n                flex-col md:flex-row max-w-6xl"
-        },
-        [
-          _c("div", { staticClass: "mt-2" }, [
-            _vm._v(
-              "\n                    © Copyright 1998-year. All Rights Reserved.\n                "
-            )
-          ]),
-          _vm._v(" "),
+    return _c(
+      "div",
+      {
+        staticClass:
+          "max-w-6xl m-auto text-gray-800 flex flex-wrap justify-left"
+      },
+      [
+        _c("div", { staticClass: "p-5 w-1/2 sm:w-4/12 md:w-3/12" }, [
           _c(
             "div",
+            { staticClass: "text-xs uppercase text-gray-400 font-medium mb-6" },
+            [_vm._v("\n                    Quick Links\n                ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
             {
-              staticClass: "md:flex-auto md:flex-row-reverse mt-2 flex-row flex"
+              staticClass:
+                "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
+              attrs: { href: "https://falahseminary.org/" }
+            },
+            [_vm._v("\n                    Home\n                ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
+              attrs: { href: "https://masjidicc.com/" }
+            },
+            [_vm._v("\n                    Masjid ICC\n                ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
+              attrs: { href: "https://masjidicc.com/donate/" }
+            },
+            [_vm._v("\n                    Donate\n                ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
+              attrs: { href: "https://github.com/falahseminary" }
+            },
+            [_vm._v("\n                    Development\n                ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
+              attrs: { href: "https://masjidicc.com/seminary/" }
+            },
+            [_vm._v("\n                    Old Home\n                ")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "p-5 w-1/2 sm:w-4/12 md:w-3/12" }, [
+          _c(
+            "div",
+            { staticClass: "text-xs uppercase text-gray-400 font-medium mb-6" },
+            [_vm._v("\n                    Masjid\n                ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
+              attrs: { href: "https://masjidicc.com/" }
+            },
+            [_vm._v("\n                    Home\n                ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
+              attrs: { href: "https://masjidicc.com/donate/" }
+            },
+            [_vm._v("\n                    Donate\n                ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
+              attrs: { href: "https://masjidicc.com/seminary/" }
             },
             [
-              _c("a", { staticClass: "w-6 mx-1", attrs: { href: "#" } }, [
-                _c("i", { staticClass: "uil uil-facebook-f" })
-              ]),
-              _vm._v(" "),
-              _c("a", { staticClass: "w-6 mx-1", attrs: { href: "#" } }, [
-                _c("i", { staticClass: "uil uil-twitter-alt" })
-              ]),
-              _vm._v(" "),
-              _c("a", { staticClass: "w-6 mx-1", attrs: { href: "#" } }, [
-                _c("i", { staticClass: "uil uil-youtube" })
-              ]),
-              _vm._v(" "),
-              _c("a", { staticClass: "w-6 mx-1", attrs: { href: "#" } }, [
-                _c("i", { staticClass: "uil uil-linkedin" })
-              ]),
-              _vm._v(" "),
-              _c("a", { staticClass: "w-6 mx-1", attrs: { href: "#" } }, [
-                _c("i", { staticClass: "uil uil-instagram" })
-              ])
+              _vm._v(
+                "\n                    Falah Seminary (Old)\n                "
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
+              attrs: { href: "https://masjidicc.com/about-us/" }
+            },
+            [_vm._v("\n                    About Us\n                ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
+              attrs: { href: "https://www.youtube.com/watch?v=6pFabzDqaXc" }
+            },
+            [
+              _vm._v(
+                "\n                    Introduction Video\n                "
+              )
             ]
           )
-        ]
-      )
-    ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "p-5 w-1/2 sm:w-4/12 md:w-3/12" }, [
+          _c(
+            "div",
+            { staticClass: "text-xs uppercase text-gray-400 font-medium mb-6" },
+            [_vm._v("\n                    Development\n                ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
+              attrs: { href: "https://github.com/falahseminary" }
+            },
+            [_vm._v("\n                    Home\n                ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
+              attrs: { href: "https://github.com/Ibsardar" }
+            },
+            [_vm._v("\n                    Author\n                ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
+              attrs: { href: "https://jetstream.laravel.com/" }
+            },
+            [
+              _vm._v(
+                "\n                    Laravel Jetstream\n                "
+              )
+            ]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
+              attrs: { href: "https://tailwindcss.com/" }
+            },
+            [_vm._v("\n                    Tailwind CSS\n                ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
+              attrs: { href: "https://vuejs.org/" }
+            },
+            [_vm._v("\n                    Vue\n                ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
+              attrs: { href: "https://inertiajs.com/" }
+            },
+            [_vm._v("\n                    Inertia\n                ")]
+          )
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "p-5 w-1/2 sm:w-4/12 md:w-3/12" }, [
+          _c(
+            "div",
+            { staticClass: "text-xs uppercase text-gray-400 font-medium mb-6" },
+            [_vm._v("\n                    Community\n                ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
+              attrs: { href: "https://twitter.com/IslamicCenterC1" }
+            },
+            [_vm._v("\n                    Twitter\n                ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
+              attrs: { href: "https://www.facebook.com/ICCMasjid/" }
+            },
+            [_vm._v("\n                    Facebook\n                ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
+              attrs: {
+                href: "https://www.youtube.com/channel/UCULgqCfvbsRtP6661l6vieg"
+              }
+            },
+            [_vm._v("\n                    Youtube\n                ")]
+          ),
+          _vm._v(" "),
+          _c(
+            "a",
+            {
+              staticClass:
+                "my-3 block text-gray-300 hover:text-gray-100 text-sm font-medium duration-700",
+              attrs: { href: "https://github.com/falahseminary" }
+            },
+            [_vm._v("\n                    GitHub\n                ")]
+          )
+        ])
+      ]
+    )
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c(
+      "div",
+      { staticClass: "md:flex-auto md:flex-row-reverse mt-4 flex-row flex" },
+      [
+        _c(
+          "a",
+          {
+            staticClass: "w-6 mx-1",
+            attrs: { href: "https://www.facebook.com/ICCMasjid/" }
+          },
+          [_c("i", { staticClass: "uil uil-facebook-f" })]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "w-6 mx-1",
+            attrs: { href: "https://twitter.com/IslamicCenterC1" }
+          },
+          [_c("i", { staticClass: "uil uil-twitter-alt" })]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "w-6 mx-1",
+            attrs: {
+              href: "https://www.youtube.com/channel/UCULgqCfvbsRtP6661l6vieg"
+            }
+          },
+          [_c("i", { staticClass: "uil uil-youtube" })]
+        ),
+        _vm._v(" "),
+        _c(
+          "a",
+          {
+            staticClass: "w-6 mx-1",
+            attrs: {
+              href:
+                "https://www.instagram.com/invites/contact/?i=1i9kk8q0k6ozu&utm_content=kklodpo"
+            }
+          },
+          [_c("i", { staticClass: "uil uil-instagram" })]
+        )
+      ]
+    )
   }
 ]
 render._withStripped = true
@@ -38201,7 +38534,7 @@ var render = function() {
       _vm._v(" "),
       _c(
         "div",
-        { staticClass: "font-sans text-7xl text-black pt-32 font-bold" },
+        { staticClass: "font-sans text-7xl text-gray-900 pt-32 font-bold" },
         [_vm._t("title", [_vm._v("\n            Fake Title\n        ")])],
         2
       ),
@@ -38629,13 +38962,20 @@ var render = function() {
           attrs: { src: _vm.bg_url }
         }),
         _vm._v(" "),
-        _c("div", { staticClass: "flex justify-center -mt-8" }, [
-          _c("img", {
-            staticClass:
-              "rounded-full border-solid border-white border-2 -mt-3",
-            attrs: { src: _vm.profile_url }
-          })
-        ]),
+        _c(
+          "div",
+          { staticClass: "flex justify-center -mt-8" },
+          [
+            _vm._t("profile_pic", [
+              _c("img", {
+                staticClass:
+                  "rounded-full border-solid border-white border-2 -mt-3",
+                attrs: { src: _vm.profile_url }
+              })
+            ])
+          ],
+          2
+        ),
         _vm._v(" "),
         _c("div", { staticClass: "text-center px-3 pb-6 pt-2" }, [
           _c(
@@ -38753,13 +39093,91 @@ var render = function() {
   return _c(
     "div",
     {
-      staticClass: "pl-32 pt-8 h-48 bg-top bg-no-repeat bg-cover bg-fixed",
+      staticClass: "pl-32 pt-9 h-32 bg-top bg-no-repeat bg-cover bg-fixed",
+      style: _vm.bg_url
+    },
+    [
+      _c(
+        "div",
+        { staticClass: "font-sans text-5xl text-gray-800 font-bold" },
+        [_vm._t("title", [_vm._v("\n            Fake Title\n        ")])],
+        2
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Components/MidPageHeaderLg.vue?vue&type=template&id=f5da0162&":
+/*!*********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Components/MidPageHeaderLg.vue?vue&type=template&id=f5da0162& ***!
+  \*********************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "pl-32 pt-8 h-112 bg-top bg-no-repeat bg-cover bg-fixed",
       style: _vm.bg_url
     },
     [
       _c(
         "div",
         { staticClass: "font-sans text-9xl text-white font-bold" },
+        [_vm._t("title", [_vm._v("\n            Fake Title\n        ")])],
+        2
+      )
+    ]
+  )
+}
+var staticRenderFns = []
+render._withStripped = true
+
+
+
+/***/ }),
+
+/***/ "./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Components/MidPageHeaderSm.vue?vue&type=template&id=dd4d0ea4&":
+/*!*********************************************************************************************************************************************************************************************************************************!*\
+  !*** ./node_modules/vue-loader/lib/loaders/templateLoader.js??vue-loader-options!./node_modules/vue-loader/lib/index.js??vue-loader-options!./resources/js/Pages/Components/MidPageHeaderSm.vue?vue&type=template&id=dd4d0ea4& ***!
+  \*********************************************************************************************************************************************************************************************************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "render": () => (/* binding */ render),
+/* harmony export */   "staticRenderFns": () => (/* binding */ staticRenderFns)
+/* harmony export */ });
+var render = function() {
+  var _vm = this
+  var _h = _vm.$createElement
+  var _c = _vm._self._c || _h
+  return _c(
+    "div",
+    {
+      staticClass: "pl-36 pt-8 h-64 bg-top bg-no-repeat bg-cover bg-fixed",
+      style: _vm.bg_url
+    },
+    [
+      _c(
+        "div",
+        { staticClass: "font-sans text-5xl text-gray-800 font-bold" },
         [_vm._t("title", [_vm._v("\n            Fake Title\n        ")])],
         2
       )
@@ -38860,138 +39278,325 @@ var render = function() {
             key: "grid",
             fn: function() {
               return [
-                _c("horizontal-scroll-grid-profile-card", {
-                  scopedSlots: _vm._u([
-                    {
-                      key: "name",
-                      fn: function() {
-                        return [_vm._v("Mufti Suleiman")]
-                      },
-                      proxy: true
-                    },
-                    {
-                      key: "title",
-                      fn: function() {
-                        return [_vm._v("Principal")]
-                      },
-                      proxy: true
+                _c(
+                  "div",
+                  {
+                    on: {
+                      click: function($event) {
+                        return _vm.bio_ms()
+                      }
                     }
-                  ])
-                }),
+                  },
+                  [
+                    _c("horizontal-scroll-grid-profile-card", {
+                      scopedSlots: _vm._u([
+                        {
+                          key: "name",
+                          fn: function() {
+                            return [_vm._v("Mufti Suleiman")]
+                          },
+                          proxy: true
+                        },
+                        {
+                          key: "title",
+                          fn: function() {
+                            return [_vm._v("Principal")]
+                          },
+                          proxy: true
+                        },
+                        {
+                          key: "profile_pic",
+                          fn: function() {
+                            return [
+                              _c("img", {
+                                staticClass:
+                                  "rounded-full w-28 border-solid border-white border-2 -mt-3",
+                                attrs: { src: "media/ms.jpeg" }
+                              })
+                            ]
+                          },
+                          proxy: true
+                        }
+                      ])
+                    })
+                  ],
+                  1
+                ),
                 _vm._v(" "),
-                _c("horizontal-scroll-grid-profile-card", {
-                  scopedSlots: _vm._u([
-                    {
-                      key: "name",
-                      fn: function() {
-                        return [_vm._v("Maulana Aiyub")]
-                      },
-                      proxy: true
-                    },
-                    {
-                      key: "title",
-                      fn: function() {
-                        return [_vm._v("Teacher")]
-                      },
-                      proxy: true
+                _c(
+                  "div",
+                  {
+                    on: {
+                      click: function($event) {
+                        return _vm.bio_ma()
+                      }
                     }
-                  ])
-                }),
+                  },
+                  [
+                    _c("horizontal-scroll-grid-profile-card", {
+                      scopedSlots: _vm._u([
+                        {
+                          key: "name",
+                          fn: function() {
+                            return [_vm._v("Maulana Aiyub")]
+                          },
+                          proxy: true
+                        },
+                        {
+                          key: "title",
+                          fn: function() {
+                            return [_vm._v("Teacher")]
+                          },
+                          proxy: true
+                        },
+                        {
+                          key: "profile_pic",
+                          fn: function() {
+                            return [
+                              _c("img", {
+                                staticClass:
+                                  "rounded-full w-28 border-solid border-white border-2 -mt-3",
+                                attrs: { src: "media/ma.jpeg" }
+                              })
+                            ]
+                          },
+                          proxy: true
+                        }
+                      ])
+                    })
+                  ],
+                  1
+                ),
                 _vm._v(" "),
-                _c("horizontal-scroll-grid-profile-card", {
-                  scopedSlots: _vm._u([
-                    {
-                      key: "name",
-                      fn: function() {
-                        return [_vm._v("Moulana Yasir")]
-                      },
-                      proxy: true
-                    },
-                    {
-                      key: "title",
-                      fn: function() {
-                        return [_vm._v("Arabic & Seerah Teacher")]
-                      },
-                      proxy: true
+                _c(
+                  "div",
+                  {
+                    on: {
+                      click: function($event) {
+                        return _vm.bio_my()
+                      }
                     }
-                  ])
-                }),
+                  },
+                  [
+                    _c("horizontal-scroll-grid-profile-card", {
+                      on: { click: _vm.bio_ms },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "name",
+                          fn: function() {
+                            return [_vm._v("Moulana Yasir")]
+                          },
+                          proxy: true
+                        },
+                        {
+                          key: "title",
+                          fn: function() {
+                            return [_vm._v("Arabic & Seerah Teacher")]
+                          },
+                          proxy: true
+                        },
+                        {
+                          key: "profile_pic",
+                          fn: function() {
+                            return [
+                              _c("img", {
+                                staticClass:
+                                  "rounded-full w-28 border-solid border-white border-2 -mt-3",
+                                attrs: { src: "media/my.jpg" }
+                              })
+                            ]
+                          },
+                          proxy: true
+                        }
+                      ])
+                    })
+                  ],
+                  1
+                ),
                 _vm._v(" "),
-                _c("horizontal-scroll-grid-profile-card", {
-                  scopedSlots: _vm._u([
-                    {
-                      key: "name",
-                      fn: function() {
-                        return [_vm._v("Moulana Bilal")]
-                      },
-                      proxy: true
-                    },
-                    {
-                      key: "title",
-                      fn: function() {
-                        return [_vm._v("Teacher")]
-                      },
-                      proxy: true
+                _c(
+                  "div",
+                  {
+                    on: {
+                      click: function($event) {
+                        return _vm.bio_mb()
+                      }
                     }
-                  ])
-                }),
+                  },
+                  [
+                    _c("horizontal-scroll-grid-profile-card", {
+                      on: { click: _vm.bio_ms },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "name",
+                          fn: function() {
+                            return [_vm._v("Moulana Bilal")]
+                          },
+                          proxy: true
+                        },
+                        {
+                          key: "title",
+                          fn: function() {
+                            return [_vm._v("Teacher")]
+                          },
+                          proxy: true
+                        },
+                        {
+                          key: "profile_pic",
+                          fn: function() {
+                            return [
+                              _c("img", {
+                                staticClass:
+                                  "rounded-full w-28 border-solid border-white border-2 -mt-3",
+                                attrs: { src: "media/mb.jpeg" }
+                              })
+                            ]
+                          },
+                          proxy: true
+                        }
+                      ])
+                    })
+                  ],
+                  1
+                ),
                 _vm._v(" "),
-                _c("horizontal-scroll-grid-profile-card", {
-                  scopedSlots: _vm._u([
-                    {
-                      key: "name",
-                      fn: function() {
-                        return [_vm._v("Moulana Ismael")]
-                      },
-                      proxy: true
-                    },
-                    {
-                      key: "title",
-                      fn: function() {
-                        return [_vm._v("Arabic Teacher")]
-                      },
-                      proxy: true
+                _c(
+                  "div",
+                  {
+                    on: {
+                      click: function($event) {
+                        return _vm.bio_mis()
+                      }
                     }
-                  ])
-                }),
+                  },
+                  [
+                    _c("horizontal-scroll-grid-profile-card", {
+                      on: { click: _vm.bio_ms },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "name",
+                          fn: function() {
+                            return [_vm._v("Moulana Ismael")]
+                          },
+                          proxy: true
+                        },
+                        {
+                          key: "title",
+                          fn: function() {
+                            return [_vm._v("Arabic Teacher")]
+                          },
+                          proxy: true
+                        },
+                        {
+                          key: "profile_pic",
+                          fn: function() {
+                            return [
+                              _c("img", {
+                                staticClass:
+                                  "rounded-full w-28 border-solid border-white border-2 -mt-3",
+                                attrs: { src: "media/mis.jpg" }
+                              })
+                            ]
+                          },
+                          proxy: true
+                        }
+                      ])
+                    })
+                  ],
+                  1
+                ),
                 _vm._v(" "),
-                _c("horizontal-scroll-grid-profile-card", {
-                  scopedSlots: _vm._u([
-                    {
-                      key: "name",
-                      fn: function() {
-                        return [_vm._v("Moulana Ibrahim")]
-                      },
-                      proxy: true
-                    },
-                    {
-                      key: "title",
-                      fn: function() {
-                        return [_vm._v("Head of Publishing")]
-                      },
-                      proxy: true
+                _c(
+                  "div",
+                  {
+                    on: {
+                      click: function($event) {
+                        return _vm.bio_mib()
+                      }
                     }
-                  ])
-                }),
+                  },
+                  [
+                    _c("horizontal-scroll-grid-profile-card", {
+                      on: { click: _vm.bio_ms },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "name",
+                          fn: function() {
+                            return [_vm._v("Moulana Ibrahim")]
+                          },
+                          proxy: true
+                        },
+                        {
+                          key: "title",
+                          fn: function() {
+                            return [_vm._v("Head of Publishing")]
+                          },
+                          proxy: true
+                        },
+                        {
+                          key: "profile_pic",
+                          fn: function() {
+                            return [
+                              _c("img", {
+                                staticClass:
+                                  "rounded-full w-28 border-solid border-white border-2 -mt-3",
+                                attrs: { src: "media/mib.jpeg" }
+                              })
+                            ]
+                          },
+                          proxy: true
+                        }
+                      ])
+                    })
+                  ],
+                  1
+                ),
                 _vm._v(" "),
-                _c("horizontal-scroll-grid-profile-card", {
-                  scopedSlots: _vm._u([
-                    {
-                      key: "name",
-                      fn: function() {
-                        return [_vm._v("Maulana Muhtasim")]
-                      },
-                      proxy: true
-                    },
-                    {
-                      key: "title",
-                      fn: function() {
-                        return [_vm._v("Teacher")]
-                      },
-                      proxy: true
+                _c(
+                  "div",
+                  {
+                    on: {
+                      click: function($event) {
+                        return _vm.bio_mm()
+                      }
                     }
-                  ])
-                })
+                  },
+                  [
+                    _c("horizontal-scroll-grid-profile-card", {
+                      on: { click: _vm.bio_ms },
+                      scopedSlots: _vm._u([
+                        {
+                          key: "name",
+                          fn: function() {
+                            return [_vm._v("Maulana Muhtasim")]
+                          },
+                          proxy: true
+                        },
+                        {
+                          key: "title",
+                          fn: function() {
+                            return [_vm._v("Teacher")]
+                          },
+                          proxy: true
+                        },
+                        {
+                          key: "profile_pic",
+                          fn: function() {
+                            return [
+                              _c("img", {
+                                staticClass:
+                                  "rounded-full w-28 border-solid border-white border-2 -mt-3",
+                                attrs: { src: "media/mm.png" }
+                              })
+                            ]
+                          },
+                          proxy: true
+                        }
+                      ])
+                    })
+                  ],
+                  1
+                )
               ]
             },
             proxy: true
@@ -54910,6 +55515,10 @@ var map = {
 	"./Components/HoverText.vue": "./resources/js/Pages/Components/HoverText.vue",
 	"./Components/MidPageHeader": "./resources/js/Pages/Components/MidPageHeader.vue",
 	"./Components/MidPageHeader.vue": "./resources/js/Pages/Components/MidPageHeader.vue",
+	"./Components/MidPageHeaderLg": "./resources/js/Pages/Components/MidPageHeaderLg.vue",
+	"./Components/MidPageHeaderLg.vue": "./resources/js/Pages/Components/MidPageHeaderLg.vue",
+	"./Components/MidPageHeaderSm": "./resources/js/Pages/Components/MidPageHeaderSm.vue",
+	"./Components/MidPageHeaderSm.vue": "./resources/js/Pages/Components/MidPageHeaderSm.vue",
 	"./Components/MovingAnnouncements": "./resources/js/Pages/Components/MovingAnnouncements.vue",
 	"./Components/MovingAnnouncements.vue": "./resources/js/Pages/Components/MovingAnnouncements.vue",
 	"./Components/MovingEvents": "./resources/js/Pages/Components/MovingEvents.vue",

@@ -1,6 +1,6 @@
 <template>
-    <div class="pl-32 pt-9 h-32 bg-top bg-no-repeat bg-cover bg-fixed" :style="bg_url">
-        <div class="font-sans text-5xl text-gray-800 font-bold">
+    <div class="pl-32 pt-8 h-112 bg-top bg-no-repeat bg-cover bg-fixed" :style="bg_url">
+        <div class="font-sans text-9xl text-white font-bold">
             <slot name="title">
                 Fake Title
             </slot>
@@ -14,7 +14,7 @@
         components: {},
         data() {
             return {
-                'bg_url' : 'background-image: url("media/bg-2-lighter.svg");',
+                'bg_url' : 'background-image: url("media/bg-2-lighter.svg");'
             }
         },
         methods: {},

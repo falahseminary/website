@@ -6,7 +6,9 @@
                     rounded-lg shadow-md hover:shadow-xl transition-shadow duration-200 ease-in-out">
             <img :src="bg_url" class="w-full h-1/3 object-cover rounded-t-lg" />
             <div class="flex justify-center -mt-8">
-                <img :src="profile_url" class="rounded-full border-solid border-white border-2 -mt-3">		
+                <slot name="profile_pic">
+                    <img :src="profile_url" class="rounded-full border-solid border-white border-2 -mt-3">
+                </slot>
             </div>
             <div class="text-center px-3 pb-6 pt-2">
                 <h3 class="text-black text-sm bold font-sans">

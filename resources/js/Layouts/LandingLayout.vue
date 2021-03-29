@@ -7,7 +7,12 @@
                 <img src="media/logo-main.png" width=80 height=80>
             </template>
             <template #options>
-                <navbar-link><template #text>Masjid ICC</template></navbar-link>
+                <div @click="goto_donate_page()" class="font-bold bg-yellow-400 rounded-lg shadow-md hover:bg-yellow-300 focus:shadow-sm transition duration-100 ease-out">
+                    <navbar-link><template #text>Donate</template></navbar-link>
+                </div>
+                <div @click="goto_icc_page()">
+                    <navbar-link><template #text>Masjid ICC</template></navbar-link>
+                </div>
                 <navbar-link><template #text>Home</template></navbar-link>
             </template>
         </navbar>
@@ -61,12 +66,35 @@
         <moving-profiles>
         </moving-profiles>
 
-        <footer-content>
-            <template #topics>
-                Topics...
+        <mid-page-header-sm>
+            <template #title>
+                Contact Us
+                <div class="grid grid-cols-10 gap-2 pt-12">
+                    <div class="text-xl text-indigo-800 font-bold">
+                        Addr:
+                    </div>
+                    <div class="text-xl col-span-9 hover:text-red-500 transition duration-200 ease-out">
+                        10501 Success Ln Washington Township OH
+                    </div>
+                    <div class="text-xl text-indigo-800 font-bold">
+                        Phone:
+                    </div>
+                    <div class="text-xl col-span-9 hover:text-red-500 transition duration-200 ease-out">
+                        5026442994
+                    </div>
+                    <div class="text-xl text-indigo-800 font-bold">
+                        Em:
+                    </div>
+                    <div class="text-xl col-span-9 hover:text-red-500 transition duration-200 ease-out">
+                        iccenterville@gmail.com
+                    </div>
+                </div>
             </template>
+        </mid-page-header-sm>
+
+        <footer-content>
             <template #credits>
-                <a href='https://www.freepik.com/vectors/background'>Background vector created by kjpargeter - www.freepik.com</a>
+                <a href='https://www.freepik.com/vectors/background'>Original background vector created by kjpargeter - www.freepik.com</a>
             </template>
         </footer-content>
 
@@ -88,6 +116,9 @@
     import HoverText from "../Pages/Components/HoverText";
     import Stats from "../Pages/Components/Stats";
     import MidPageHeader from "../Pages/Components/MidPageHeader";
+    import MidPageHeaderLg from "../Pages/Components/MidPageHeaderLg";
+    import MidPageHeaderSm from "../Pages/Components/MidPageHeaderSm";
+    import HorizontalScrollAreaPopCard from "../Pages/Components/HorizontalScrollAreaPopCard"
     export default {
         components: {
             AboutUs,
@@ -103,7 +134,10 @@
             HoverText,
             NavbarItem,
             Stats,
-            MidPageHeader
+            MidPageHeader,
+            MidPageHeaderLg,
+            MidPageHeaderSm,
+            HorizontalScrollAreaPopCard
         },
 
         data() {
@@ -114,6 +148,12 @@
             logout() {
                 this.$inertia.post(route('logout'));
             },
+            goto_icc_page () {
+                window.location = 'https://masjidicc.com/';
+            },
+            goto_donate_page () {
+                window.location = 'https://masjidicc.com/donate/';
+            }
         },
 
         props: [
