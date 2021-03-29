@@ -1,40 +1,51 @@
 <template>
     <div>
-        <!-- pasted from: https://tailwindcomponents.com/component/profile-card -->
 
-
-        <slot name="cards">
-            Malformed Profile Cards
-        </slot>
-
-        <div class="rounded overflow-hidden shadow-lg max-w-xs my-3">
-            <img src="https://i.imgur.com/dYcYQ7E.png" class="w-full" />
-            <div class="flex justify-center -mt-8">
-                <img src="https://i.imgur.com/8Km9tLL.jpg" class="rounded-full border-solid border-white border-2 -mt-3">		
-            </div>
-            <div class="text-center px-3 pb-6 pt-2">
-                <h3 class="text-black text-sm bold font-sans">Olivia Dunham</h3>
-                <p class="mt-2 font-sans font-light text-grey-dark">Hello, i'm from another the other side!</p>
-            </div>
-            <div class="flex justify-center pb-3 text-grey-dark">
-            <div class="text-center mr-3 border-r pr-3">
-                <h2>34</h2>
-                <span>Photos</span>
-            </div>
-            <div class="text-center">
-                <h2>42</h2>
-                <span>Friends</span>
-            </div>
-            </div>
-        </div>
+        <horizontal-scroll-grid>
+            <template #grid>
+                <horizontal-scroll-grid-profile-card>
+                    <template #name>Mufti Suleiman</template>
+                    <template #title>Principal</template>
+                </horizontal-scroll-grid-profile-card>
+                <horizontal-scroll-grid-profile-card>
+                    <template #name>Maulana Aiyub</template>
+                    <template #title>Teacher</template>
+                </horizontal-scroll-grid-profile-card>
+                <horizontal-scroll-grid-profile-card>
+                    <template #name>Moulana Yasir</template>
+                    <template #title>Arabic & Seerah Teacher</template>
+                </horizontal-scroll-grid-profile-card>
+                <horizontal-scroll-grid-profile-card>
+                    <template #name>Moulana Bilal</template>
+                    <template #title>Teacher</template>
+                </horizontal-scroll-grid-profile-card>
+                <horizontal-scroll-grid-profile-card>
+                    <template #name>Moulana Ismael</template>
+                    <template #title>Arabic Teacher</template>
+                </horizontal-scroll-grid-profile-card>
+                <horizontal-scroll-grid-profile-card>
+                    <template #name>Moulana Ibrahim</template>
+                    <template #title>Head of Publishing</template>
+                </horizontal-scroll-grid-profile-card>
+                <horizontal-scroll-grid-profile-card>
+                    <template #name>Maulana Muhtasim</template>
+                    <template #title>Teacher</template>
+                </horizontal-scroll-grid-profile-card>
+            </template>
+        </horizontal-scroll-grid>
 
     </div>
 </template>
 
 
 <script>
+    import HorizontalScrollGrid from "./HorizontalScrollGrid";
+    import HorizontalScrollGridProfileCard from "./HorizontalScrollGridProfileCard";
     export default {
-        components: {},
+        components: {
+            HorizontalScrollGrid,
+            HorizontalScrollGridProfileCard
+        },
         data() { return {} },
         methods: {},
     }

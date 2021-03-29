@@ -13309,6 +13309,30 @@ select{
   height: 24rem;
 }
 
+.h-112{
+  height: 28rem;
+}
+
+.h-128{
+  height: 32rem;
+}
+
+.h-144{
+  height: 36rem;
+}
+
+.h-160{
+  height: 40rem;
+}
+
+.h-176{
+  height: 44rem;
+}
+
+.h-192{
+  height: 48rem;
+}
+
 .h-auto{
   height: auto;
 }
@@ -15964,8 +15988,28 @@ select{
   min-width: 0px;
 }
 
+.min-w-112{
+  min-width: 28rem;
+}
+
 .min-w-128{
   min-width: 32rem;
+}
+
+.min-w-144{
+  min-width: 36rem;
+}
+
+.min-w-160{
+  min-width: 40rem;
+}
+
+.min-w-176{
+  min-width: 44rem;
+}
+
+.min-w-192{
+  min-width: 48rem;
 }
 
 .min-w-full{
@@ -46282,6 +46326,30 @@ select{
     height: 24rem;
   }
 
+  .sm\:h-112{
+    height: 28rem;
+  }
+
+  .sm\:h-128{
+    height: 32rem;
+  }
+
+  .sm\:h-144{
+    height: 36rem;
+  }
+
+  .sm\:h-160{
+    height: 40rem;
+  }
+
+  .sm\:h-176{
+    height: 44rem;
+  }
+
+  .sm\:h-192{
+    height: 48rem;
+  }
+
   .sm\:h-auto{
     height: auto;
   }
@@ -48937,8 +49005,28 @@ select{
     min-width: 0px;
   }
 
+  .sm\:min-w-112{
+    min-width: 28rem;
+  }
+
   .sm\:min-w-128{
     min-width: 32rem;
+  }
+
+  .sm\:min-w-144{
+    min-width: 36rem;
+  }
+
+  .sm\:min-w-160{
+    min-width: 40rem;
+  }
+
+  .sm\:min-w-176{
+    min-width: 44rem;
+  }
+
+  .sm\:min-w-192{
+    min-width: 48rem;
   }
 
   .sm\:min-w-full{
@@ -79168,6 +79256,30 @@ select{
     height: 24rem;
   }
 
+  .md\:h-112{
+    height: 28rem;
+  }
+
+  .md\:h-128{
+    height: 32rem;
+  }
+
+  .md\:h-144{
+    height: 36rem;
+  }
+
+  .md\:h-160{
+    height: 40rem;
+  }
+
+  .md\:h-176{
+    height: 44rem;
+  }
+
+  .md\:h-192{
+    height: 48rem;
+  }
+
   .md\:h-auto{
     height: auto;
   }
@@ -81823,8 +81935,28 @@ select{
     min-width: 0px;
   }
 
+  .md\:min-w-112{
+    min-width: 28rem;
+  }
+
   .md\:min-w-128{
     min-width: 32rem;
+  }
+
+  .md\:min-w-144{
+    min-width: 36rem;
+  }
+
+  .md\:min-w-160{
+    min-width: 40rem;
+  }
+
+  .md\:min-w-176{
+    min-width: 44rem;
+  }
+
+  .md\:min-w-192{
+    min-width: 48rem;
   }
 
   .md\:min-w-full{
@@ -112054,6 +112186,30 @@ select{
     height: 24rem;
   }
 
+  .lg\:h-112{
+    height: 28rem;
+  }
+
+  .lg\:h-128{
+    height: 32rem;
+  }
+
+  .lg\:h-144{
+    height: 36rem;
+  }
+
+  .lg\:h-160{
+    height: 40rem;
+  }
+
+  .lg\:h-176{
+    height: 44rem;
+  }
+
+  .lg\:h-192{
+    height: 48rem;
+  }
+
   .lg\:h-auto{
     height: auto;
   }
@@ -114709,8 +114865,28 @@ select{
     min-width: 0px;
   }
 
+  .lg\:min-w-112{
+    min-width: 28rem;
+  }
+
   .lg\:min-w-128{
     min-width: 32rem;
+  }
+
+  .lg\:min-w-144{
+    min-width: 36rem;
+  }
+
+  .lg\:min-w-160{
+    min-width: 40rem;
+  }
+
+  .lg\:min-w-176{
+    min-width: 44rem;
+  }
+
+  .lg\:min-w-192{
+    min-width: 48rem;
   }
 
   .lg\:min-w-full{
@@ -144940,6 +145116,30 @@ select{
     height: 24rem;
   }
 
+  .xl\:h-112{
+    height: 28rem;
+  }
+
+  .xl\:h-128{
+    height: 32rem;
+  }
+
+  .xl\:h-144{
+    height: 36rem;
+  }
+
+  .xl\:h-160{
+    height: 40rem;
+  }
+
+  .xl\:h-176{
+    height: 44rem;
+  }
+
+  .xl\:h-192{
+    height: 48rem;
+  }
+
   .xl\:h-auto{
     height: auto;
   }
@@ -147595,8 +147795,28 @@ select{
     min-width: 0px;
   }
 
+  .xl\:min-w-112{
+    min-width: 28rem;
+  }
+
   .xl\:min-w-128{
     min-width: 32rem;
+  }
+
+  .xl\:min-w-144{
+    min-width: 36rem;
+  }
+
+  .xl\:min-w-160{
+    min-width: 40rem;
+  }
+
+  .xl\:min-w-176{
+    min-width: 44rem;
+  }
+
+  .xl\:min-w-192{
+    min-width: 48rem;
   }
 
   .xl\:min-w-full{
@@ -177826,6 +178046,30 @@ select{
     height: 24rem;
   }
 
+  .\32xl\:h-112{
+    height: 28rem;
+  }
+
+  .\32xl\:h-128{
+    height: 32rem;
+  }
+
+  .\32xl\:h-144{
+    height: 36rem;
+  }
+
+  .\32xl\:h-160{
+    height: 40rem;
+  }
+
+  .\32xl\:h-176{
+    height: 44rem;
+  }
+
+  .\32xl\:h-192{
+    height: 48rem;
+  }
+
   .\32xl\:h-auto{
     height: auto;
   }
@@ -180481,8 +180725,28 @@ select{
     min-width: 0px;
   }
 
+  .\32xl\:min-w-112{
+    min-width: 28rem;
+  }
+
   .\32xl\:min-w-128{
     min-width: 32rem;
+  }
+
+  .\32xl\:min-w-144{
+    min-width: 36rem;
+  }
+
+  .\32xl\:min-w-160{
+    min-width: 40rem;
+  }
+
+  .\32xl\:min-w-176{
+    min-width: 44rem;
+  }
+
+  .\32xl\:min-w-192{
+    min-width: 48rem;
   }
 
   .\32xl\:min-w-full{

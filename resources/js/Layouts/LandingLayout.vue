@@ -51,11 +51,14 @@
                 We envision from the establishment of our humble institution a means for the youth to acquire a closeness with Allah through following the sunnah of our Prophet Muhammad صلى الله عليه و سلم and attaining the very valuable branches of sacred Islamic knowledge that follows a path up to the Prophet Muhammad صلى الله عليه و سلم. To give them a sense of identity of who they are as Muslims and engender them to be leaders of their community where they will serve, lead, spread, and strengthen the Islamic identity of the coming generations.
             </template>
         </about-us>
-        
-        <moving-profiles class="hidden">
-            <template #cards>
-                Cards...
+
+        <mid-page-header>
+            <template #title>
+                Our Staff
             </template>
+        </mid-page-header>
+        
+        <moving-profiles>
         </moving-profiles>
 
         <footer-content>
@@ -84,6 +87,7 @@
     import RectTag from "../Pages/Components/RectTag";
     import HoverText from "../Pages/Components/HoverText";
     import Stats from "../Pages/Components/Stats";
+    import MidPageHeader from "../Pages/Components/MidPageHeader";
     export default {
         components: {
             AboutUs,
@@ -98,7 +102,8 @@
             RectTag,
             HoverText,
             NavbarItem,
-            Stats
+            Stats,
+            MidPageHeader
         },
 
         data() {

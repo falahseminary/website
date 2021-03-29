@@ -1,5 +1,5 @@
 <template>
-    <div class="IGNORE.pt-32 md:pt-64 md:px-32 pt-40 px-8 h-screen bg-top bg-no-repeat bg-cover bg-fixed" :style="bg_url">
+    <div class="IGNORE.pt-32 md:pt-64 md:pl-32 pt-40 pl-8 h-screen bg-top bg-no-repeat bg-cover bg-fixed" :style="bg_url">
         <div class="font-serif text-5xl text-gray-100 text-center -mt-4 md:-mt-16">
             <slot name="supertext">
                 Fake Supertext
