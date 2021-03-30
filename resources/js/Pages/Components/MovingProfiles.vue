@@ -10,6 +10,9 @@
                         <template #profile_pic>
                             <img src="media/ms.jpeg" class="rounded-full w-28 border-solid border-white border-2 -mt-3">
                         </template>
+                        <template #keywords>
+                            <div>Keywords</div>
+                        </template>
                     </horizontal-scroll-grid-profile-card>
                 </div>
                 
@@ -19,6 +22,9 @@
                         <template #title>Teacher</template>
                         <template #profile_pic>
                             <img src="media/ma.jpeg" class="rounded-full w-28 border-solid border-white border-2 -mt-3">
+                        </template>
+                        <template #keywords>
+                            Keywords
                         </template>
                     </horizontal-scroll-grid-profile-card>
                 </div>
@@ -30,6 +36,9 @@
                         <template #profile_pic>
                             <img src="media/my.jpg" class="rounded-full w-28 border-solid border-white border-2 -mt-3">
                         </template>
+                        <template #keywords>
+                            Keywords
+                        </template>
                     </horizontal-scroll-grid-profile-card>
                 </div>
 
@@ -39,6 +48,9 @@
                         <template #title>Teacher</template>
                         <template #profile_pic>
                             <img src="media/mb.jpeg" class="rounded-full w-28 border-solid border-white border-2 -mt-3">
+                        </template>
+                        <template #keywords>
+                            Keywords
                         </template>
                     </horizontal-scroll-grid-profile-card>
                 </div>
@@ -50,6 +62,9 @@
                         <template #profile_pic>
                             <img src="media/mis.jpg" class="rounded-full w-28 border-solid border-white border-2 -mt-3">
                         </template>
+                        <template #keywords>
+                            Keywords
+                        </template>
                     </horizontal-scroll-grid-profile-card>
                 </div>
                 
@@ -60,6 +75,9 @@
                         <template #profile_pic>
                             <img src="media/mib.jpeg" class="rounded-full w-28 border-solid border-white border-2 -mt-3">
                         </template>
+                        <template #keywords>
+                            Keywords
+                        </template>
                     </horizontal-scroll-grid-profile-card>
                 </div>
                 
@@ -69,6 +87,9 @@
                         <template #title>Teacher</template>
                         <template #profile_pic>
                             <img src="media/mm.png" class="rounded-full w-28 border-solid border-white border-2 -mt-3">
+                        </template>
+                        <template #keywords>
+                            <div>Keywords</div>
                         </template>
                     </horizontal-scroll-grid-profile-card>
                 </div>

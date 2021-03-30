@@ -5161,8 +5161,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   components: {},
   data: function data() {
@@ -5388,6 +5386,27 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _HorizontalScrollGrid__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./HorizontalScrollGrid */ "./resources/js/Pages/Components/HorizontalScrollGrid.vue");
 /* harmony import */ var _HorizontalScrollGridProfileCard__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./HorizontalScrollGridProfileCard */ "./resources/js/Pages/Components/HorizontalScrollGridProfileCard.vue");
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 //
 //
 //
@@ -39003,35 +39022,25 @@ var render = function() {
           )
         ]),
         _vm._v(" "),
-        _vm._m(0)
+        _c("div", { staticClass: "flex justify-center pb-3 text-grey-dark" }, [
+          _c(
+            "div",
+            { staticClass: "text-center border-t pt-2" },
+            [
+              _vm._t("keywords", [
+                _c("div", [_vm._v("Key")]),
+                _vm._v(" "),
+                _c("div", [_vm._v("Word")])
+              ])
+            ],
+            2
+          )
+        ])
       ]
     )
   ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c(
-      "div",
-      { staticClass: "flex justify-center pb-3 text-grey-dark" },
-      [
-        _c("div", { staticClass: "text-center mr-3 border-r pr-3" }, [
-          _c("h2", [_vm._v("12")]),
-          _vm._v(" "),
-          _c("span", [_vm._v("Posts")])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "text-center" }, [
-          _c("h2", [_vm._v("34")]),
-          _vm._v(" "),
-          _c("span", [_vm._v("Classes")])
-        ])
-      ]
-    )
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
@@ -39316,6 +39325,13 @@ var render = function() {
                             ]
                           },
                           proxy: true
+                        },
+                        {
+                          key: "keywords",
+                          fn: function() {
+                            return [_c("div", [_vm._v("Keywords")])]
+                          },
+                          proxy: true
                         }
                       ])
                     })
@@ -39358,6 +39374,17 @@ var render = function() {
                                   "rounded-full w-28 border-solid border-white border-2 -mt-3",
                                 attrs: { src: "media/ma.jpeg" }
                               })
+                            ]
+                          },
+                          proxy: true
+                        },
+                        {
+                          key: "keywords",
+                          fn: function() {
+                            return [
+                              _vm._v(
+                                "\n                        Keywords\n                    "
+                              )
                             ]
                           },
                           proxy: true
@@ -39407,6 +39434,17 @@ var render = function() {
                             ]
                           },
                           proxy: true
+                        },
+                        {
+                          key: "keywords",
+                          fn: function() {
+                            return [
+                              _vm._v(
+                                "\n                        Keywords\n                    "
+                              )
+                            ]
+                          },
+                          proxy: true
                         }
                       ])
                     })
@@ -39450,6 +39488,17 @@ var render = function() {
                                   "rounded-full w-28 border-solid border-white border-2 -mt-3",
                                 attrs: { src: "media/mb.jpeg" }
                               })
+                            ]
+                          },
+                          proxy: true
+                        },
+                        {
+                          key: "keywords",
+                          fn: function() {
+                            return [
+                              _vm._v(
+                                "\n                        Keywords\n                    "
+                              )
                             ]
                           },
                           proxy: true
@@ -39499,6 +39548,17 @@ var render = function() {
                             ]
                           },
                           proxy: true
+                        },
+                        {
+                          key: "keywords",
+                          fn: function() {
+                            return [
+                              _vm._v(
+                                "\n                        Keywords\n                    "
+                              )
+                            ]
+                          },
+                          proxy: true
                         }
                       ])
                     })
@@ -39542,6 +39602,17 @@ var render = function() {
                                   "rounded-full w-28 border-solid border-white border-2 -mt-3",
                                 attrs: { src: "media/mib.jpeg" }
                               })
+                            ]
+                          },
+                          proxy: true
+                        },
+                        {
+                          key: "keywords",
+                          fn: function() {
+                            return [
+                              _vm._v(
+                                "\n                        Keywords\n                    "
+                              )
                             ]
                           },
                           proxy: true
@@ -39589,6 +39660,13 @@ var render = function() {
                                 attrs: { src: "media/mm.png" }
                               })
                             ]
+                          },
+                          proxy: true
+                        },
+                        {
+                          key: "keywords",
+                          fn: function() {
+                            return [_c("div", [_vm._v("Keywords")])]
                           },
                           proxy: true
                         }

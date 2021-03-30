@@ -121,7 +121,7 @@ fi
 
 
 # prod
-if [ "$E_MODE" == "stage" ]; then
+if [ "$E_MODE" == "prod" ]; then
     # run php-fpm as root in foreground
     echo "Running PHP FPM in foreground..."
     php-fpm -F -R

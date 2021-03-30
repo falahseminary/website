@@ -23,13 +23,11 @@
                 </p>
             </div>
             <div class="flex justify-center pb-3 text-grey-dark">
-                <div class="text-center mr-3 border-r pr-3">
-                    <h2>12</h2>
-                    <span>Posts</span>
-                </div>
-                <div class="text-center">
-                    <h2>34</h2>
-                    <span>Classes</span>
+                <div class="text-center border-t pt-2">
+                    <slot name="keywords">
+                        <div>Key</div>
+                        <div>Word</div>
+                    </slot>
                 </div>
             </div>
         </div>
