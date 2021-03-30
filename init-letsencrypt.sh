@@ -156,7 +156,7 @@ n_renewals=0
 dummy_certificate_domains=()
 for domains in "${domains_list[@]}"; do
     renew_certificate=$(should_renew_certificate "$data_path" "$domains")
-    if [ "$renew_certificate" -eq "1" ]; then
+    if [ "$renew_certificate" -eq 1 ]; then
       n_renewals=$(( n_renewals+1 ))
       make_dummy_certificate "$data_path" "$domains" "$rsa_key_size"
       dummy_certificate_domains+=( "${domains[0]}" )
