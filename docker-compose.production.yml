@@ -8,7 +8,7 @@ x-nginx-root: &nginx-root
 x-global-restart-behaviour: &global-restart-behaviour
   restart: unless-stopped
 x-mode: &mode
-  MODE: "prod" # options include: prod, stage, dev, demo
+  MODE: "stage" # options include: prod, stage, dev, demo
 
 
 services:
