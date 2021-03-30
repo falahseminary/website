@@ -56,19 +56,19 @@ services:
       - database_service
 
 
-  #certbot_service:
-  #  container_name: certbot_service_container
-  #  build:
-  #    context: .
-  #    dockerfile: ./dockerfiles/certbot.Dockerfile
-  #    args:
-  #      <<: *nginx-root
-  #  volumes:
-  #    - ./server/certbot/conf:/etc/letsencrypt
-  #    - ./server/certbot/www:/var/www/certbot
-  #    # comment out if not using dns plugin with certbot
-  #    - /etc/letsencrypt/digitalocean.ini:/etc/letsencrypt/digitalocean.ini # left side must match in init-letsencrypt.sh
-  #  <<: *global-restart-behaviour
+  certbot_service:
+    container_name: certbot_service_container
+    build:
+      context: .
+      dockerfile: ./dockerfiles/certbot.Dockerfile
+      args:
+        <<: *nginx-root
+    volumes:
+      - ./server/certbot/conf:/etc/letsencrypt
+      - ./server/certbot/www:/var/www/certbot
+      # comment out if not using dns plugin with certbot
+      - /etc/letsencrypt/digitalocean.ini:/etc/letsencrypt/digitalocean.ini # left side must match in init-letsencrypt.sh
+    <<: *global-restart-behaviour
 
 
   admin_service:
